@@ -1,0 +1,519 @@
+*********
+2.Ticket
+*********
+Use this screen to see the details of a ticket. The Ticket screen is available, if you click on a ticket in any other screens.
+
+.. image:: /image/31.png
+    
+Ticket Screen
+
+This screen has an own menu and contains several widgets.
+
+
+**Ticket Menu**
+***************
+
+The Ticket Zoom screen has an own menu.
+The menu is extensible and menu items can be grouped into drop-down lists.
+Ticket Menu
+
+
+Back
+****
+
+This menu item goes back to the previous screen.
+
+
+Print
+*****
+
+This menu item opens a PDF file to show the printer friendly version of the screen. You can save or print this PDF file.
+
+Priority
+********
+This menu item opens a new window to change the priority of the ticket.
+ 
+.. image:: /image/32.png
+   
+Change Priority Screen
+
+**Priority**
+
+Select the new priority for the ticket.
+
+**Subject**
+
+The subject of the ticket like the subject of an email.
+
+**Options**
+
+It is possible to add other objects like customer users or FAQ articles to the ticket.
+
+**Text**
+
+The body text of the note to be added to the ticket.
+
+**Attachments**
+
+It is possible to add attachments to the ticket. Click on the field to add an attachment, or just drop some files here.
+
+**Is visible for customer**
+
+Define, if the note is an internal note or customer can view it.
+
+**Time units**(work units)
+
+Enter any amount of time units for time accounting.
+
+
+People
+******
+This menu item groups the following menu items together:
+
+Owner
+*****
+
+This menu item opens a new window to change the owner of the ticket.
+ 
+.. image:: /image/33.png
+   
+Change Owner Screen
+
+**New Owner**
+
+Select the new owner agent from the list. The agent needs owner permission, otherwise the agent is not listed.
+
+**Subject**
+
+The subject of the ticket like the subject of an email.
+
+**Options**
+
+
+It is possible to add other objects like customer users or FAQ articles to the ticket.
+
+**Text**
+
+The body text of the note to be added to the ticket.
+
+**Attachments**
+
+It is possible to add attachments to the ticket. Click on the field to add an attachment, or just drop some files here.
+
+**Is visible for customer**
+
+Define, if the note is an internal note or customer can view it.
+
+**Time units (work units)**
+
+Enter any amount of time units for time accounting.
+
+Customer
+********
+
+This menu item opens a new window to change the customer of the ticket.w
+
+.. image:: /image/34.png
+ 
+
+Change Customer Screen
+
+**Customer user**
+
+The new customer user of the ticket.
+
+**Customer ID**
+
+Automatically selected based on the customer user.
+
+
+Communication
+**************
+This menu item groups the following menu items together:
+
+
+Note
+****
+This menu item opens a new window to add a note as new article to the ticket.
+ 
+.. image:: /image/35.png
+ 
+
+Add Note Screen
+
+**Subject**
+
+The subject of the ticket like the subject of an email.
+
+**Options**
+
+It is possible to add other objects like customer users or FAQ articles to the ticket.
+
+**Text**
+
+The body text of the note to be added to the ticket.
+
+**Attachments**
+
+It is possible to add attachments to the ticket. Click on the field to add an attachment, or just drop some files here.
+
+**Is visible for customer**
+
+Define, if the note is an internal note or customer can view it.
+
+**Time units (work units)**
+
+Enter any amount of time units for time accounting.
+
+
+Phone Call Outbound
+*******************
+This menu item opens a new window to add a note based on an outgoing phone call to the ticket.
+ 
+
+.. image:: /image/36.png
+
+Phone Call Screen
+
+**Subject**
+
+The subject of the ticket like the subject of an email.
+
+
+**options**
+It is possible to add other objects like customer users or FAQ articles to the ticket.
+
+**Text**
+
+The body text of the note to be added to the ticket.
+
+**Attachments**
+
+It is possible to add attachments to the ticket. Click on the field to add an attachment, or just drop some files here.
+
+**Next ticket state**
+
+Select an other state if you want to change it.
+
+**Pending date**
+
+Select a date and time as reminder for the ticket. If the pending time is reached, the ticket can be escalated.
+
+**Time units (work units)**
+
+Enter any amount of time units for time accounting.
+
+
+Phone Call Inbound
+******************
+
+This menu item opens a new window to add a note based on an incoming phone call to the ticket.
+
+This screen is the same as Phone Call Outbound screen.
+
+E-Mail Outbound
+***************
+This menu item opens a new window to send an email and add the email as article to the ticket. This screen is very similar to an email client screen.
+
+.. image:: /image/37.png
+
+Outbound Email Screen
+
+
+**From**
+
+This field is read only and holds the queue address.
+
+**To**
+
+This will be the To field of the email.
+
+**Cc**
+
+Select other customer users as carbon copy of the email, if needed.
+
+**Bcc**
+
+Select other customer users as blind carbon copy of the email, if needed.
+
+**Note**
+
+You can select a customer user from TICKETING PORTAL or any valid email address can be added here.
+
+Usage of wildcards (*) is also possible. Enter two asterisks (**) to list all customer users.
+
+
+**Subject**
+
+The subject of the ticket like the subject of an email.
+
+**Options**
+
+It is possible to add other objects like customer users or FAQ articles to the ticket.
+
+**Text**
+
+The body text of the note to be added to the ticket.
+
+**Attachments**
+
+It is possible to add attachments to the ticket. Click on the field to add an attachment, or just drop some files here.
+
+**Next ticket state**
+
+Select an other state if you want to change it.
+
+**Pending date**
+
+
+Select a date and time as reminder for the ticket. If the pending time is reached, the ticket can be escalated.
+
+**Visible for customer**
+
+Define, if the note is an internal note or customer can view it.
+
+**Time units (work units)**
+
+Enter any amount of time units for time accounting.
+
+Pending
+*******
+
+This menu item opens a new window to set the pending time of the ticket.
+
+.. image:: /image/38.png
+Set Pending Time Screen
+
+**Next state**
+
+Select the pending state of the ticket.
+
+**Pending date**
+
+Select a date and time as reminder for the ticket. If the pending time is reached, the ticket can be escalated.
+
+**Subject**
+
+The subject of the ticket like the subject of an email.
+
+**Options**
+
+It is possible to add other objects like customer users or FAQ articles to the ticket.
+
+**Text**
+
+The body text of the note to be added to the ticket.
+
+**Attachments**
+
+It is possible to add attachments to the ticket. Click on the field to add an attachment, or just drop some files here.
+
+
+**Is visible for customer**
+
+Define, if the note is an internal note or customer can view it.
+
+**Time units (work units)**
+
+Enter any amount of time units for time accounting.
+
+Close
+*****
+This menu item opens a new window to close the ticket.
+ 
+.. image:: /image/39.png
+Set Pending Time Screen
+
+**Next state**
+
+Select the closed state of the ticket.
+
+**Subject**
+
+The subject of the ticket like the subject of an email.
+
+**Options**
+
+It is possible to add other objects like customer users or FAQ articles to the ticket.
+
+**Text**
+
+The body text of the note to be added to the ticket.
+
+**Attachments**
+
+It is possible to add attachments to the ticket. Click on the field to add an attachment, or just drop some files here.
+
+**Is visible for customer**
+
+Define, if the note is an internal note or customer can view it.
+
+**Time units (work units)**
+
+Enter any amount of time units for time accounting.
+
+
+**Process**
+
+This menu item opens the New Process Ticket screen to start a process from this ticket.
+
+**Note**
+
+This option is available only, if at least one process is deployed in the system.
+
+
+Miscellaneous
+**************
+
+This menu item groups the following menu items together:
+
+**Lock or Unlock**
+
+The name of the menu item depends on the lock state of the ticket.
+
+Lock
+****
+If the ticket is unlocked, an agent can lock the ticket and the agent becomes the ticket owner.
+
+**Unlock**
+
+If the ticket is locked to an agent, the agent can release the ticket and other agents can lock it.
+
+**Warning**
+
+This menu item has no confirmation window. Lock or unlock the ticket is done immediately.
+
+History
+********
+This menu item opens a new window to see the history of the ticket.
+ 
+.. image:: /image/40.png
+Ticket History Screen
+
+
+**Note**
+
+If several entries are added to the history, use the filter box to find a particular entry by just typing something to filter.
+
+Free Fields
+************
+This menu item opens a new window to change the free field values of the ticket.
+
+
+.. image:: /image/41.png
+Ticket Free Text Screen
+
+
+**Title**
+
+The title of the ticket.
+
+Link
+*****
+
+This menu item opens the standard link screen of TICKETING PORTAL. Tickets can be linked to other tickets, FAQ articles or appointments. Existing links can also be managed here.
+ 
+
+.. image:: /image/42.png
+Link Ticket Screen
+
+**Link with**
+
+Select the other object the ticket should be linked to.
+
+The other fields can be used to find the appropriate object to link, and the fields can be different for each object.
+
+Merge
+*****
+
+This menu item opens a new window to find a destination ticket for the current ticket. The articles of current ticket will be moved to the destination ticket, and the current ticket will get the state merged.
+
+
+.. image:: /image/43.png
+Ticket Merge Screen
+
+**Merge to Ticket**
+
+Try typing part of the ticket number or title in order to search by it.
+
+**Inform sender**
+
+Check this box, if you would like to inform sender about ticket merge. If this box is checked, the following fields must be filled.
+
+**From**
+
+This field is read only and holds the queue address.
+
+**To**
+
+
+This will be the To field of the email.
+
+**Subject**
+
+The subject of the ticket like the subject of an email.
+
+**Text*8*
+
+The body text of the email to be sent.
+
+New Appointment
+***************
+
+This menu item opens the New Appointment dialog, and selects the current ticket in the Ticket field for linking.
+
+**Queue**
+
+This menu item is only a drop-down list of available queues. Select a destination queue, if the ticket needs to be moved there.
+
+
+**Warning**
+
+This menu item has no confirmation window. Moving the ticket to an other queue is done immediately.
+
+**Settings**
+
+Click on the gear icon in the right side of the ticket menu to change the article view settings. The following options are available:
+
+**Show one article**
+
+Only the article is displayed in the Article Zoom widget, which is selected in the Article Overview widget.
+
+**Show all articles**
+
+All articles are displayed in the Article Zoom widget under each other.
+
+**Show Ticket Timeline View**
+
+Articles are displayed in a timeline without Article Overview widget and article menu.
+
+
+**Article Overview**
+********************
+This widget lists all articles of the ticket in a table.
+
+.. image:: /image/44.png
+Article Overview Widget
+
+Most of the columns are sortable by clicking on the header. Click again to change the sort order.
+
+There are three possible colors used to mark the type of article.
+
+*	**White**: the article is visible for the customer user in the external interface and for agents in the agent interface.
+
+*	**Red**: the article is not visible for the customer user in the external interface, but it is visible for agents in the agent interface.
+
+*	**Yellow**: the article is a system message and the visibility can be changed in the system configuration.
+
+Note
+This widget is not displayed in ticket timeline view.
+
+
+**Ticket Information**
+**********************
+This widget contains information about the ticket.
+ 
+.. image:: /image/45.png
+
+Ticket Information Widget
+

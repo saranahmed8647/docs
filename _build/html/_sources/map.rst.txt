@@ -1,0 +1,77 @@
+******
+2. Map
+******
+
++-----------------+--------------------------------------------------------------------------+
+| Objective       | This modules displays the network devices on open street geographical map|
++-----------------+--------------------------------------------------------------------------+
+| Pre-Requisites  | Map Data type module integration , and coordinates values                |
++-----------------+--------------------------------------------------------------------------+                  
+| Impact          | Devices whose coordinates are added will display on map                  |
++-----------------+--------------------------------------------------------------------------+  
+
+Using this module the on boarded hosts can be viewed on MAP (openstreetmap) with respect to their geographic locations. An open-source module MAP and MAP Datatype has been integrated with NMS web portal. Location coordinates (Latitude & Longitude values) of devices are needed to display them on MAP. Interactive values are shown on map with redirect links.ready created open source module MAP and MAP Datatype has been integrated to NMS web portal, for every host it requires coordinates(latitude and longitude values), so it can then be display on map through that value.Interactive values shown on map with redirect links.
+
+.. image:: /image/map.png
+
+
+This map can also be integrated in the dashboard as multiple dashlets to show filtered devices.
+
+
+.. image:: /image/maps-dashlet.png
+
+
+Adding Markers to MAP
+#####################
+
+
+To add a marker in the map, use a plugin named mapDatatype. This plugin allows you to add and change the coordinates while on boarding a host.
+
+*If the Geo location field was not defined while on boarding the host, then define the data field by following below mentioned steps.*
+
+1.	Login to Trace9 and go to Director.
+2.	Inside director we will see Define Data Fields. Click on it.
+
+
+.. image:: /image/maps-customdata.png
+
+3.	Data fields page will appear on screen. Click on Add
+
+
+.. image:: /image/maps-datafield.png
+
+4.	Add a new Data field page will appear on screen. Fill in the details and choose Location (MapDatatype) in the datatype field. Click Add. The field will be added to list.
+
+
+.. image:: /image/map-datafieldaddition.png
+
+
+Once the field is added, the host on-boarding page will have a new field named geo location and two options will be available, either to give the coordinates (latitude & longitude) of the host or to choose from map by click map icon below that field as shown in image below.
+
+a.	By giving Coordinates (Latitude & Longitude)
+
+
+.. image:: /image/map-coordinates.png
+
+
+b.	By clicking the MAP Icon
+
+Click on map icon on the extreme right of field
+
+
+.. image:: /image/maps-mapicon.png
+
+A window will be opened with world map view. Search and click on a specific location to add marker on it.
+
+
+.. image:: /image/maps-visual.png
+
+
+Host Device's can be seen in Green and Red color respective to their statuses
+
+.. image:: /image/maps-device-visual.png
+
+
+After adding marker to the specified location of host, click on the tick sign in order add it. After adding host click on maps and the marker of the specified host will be displayed on the map.
+
+.. image:: /image/map-hostobject.png

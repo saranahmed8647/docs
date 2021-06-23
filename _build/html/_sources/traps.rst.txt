@@ -1,0 +1,126 @@
+*********
+10. Traps
+*********
+
+This module receive and handle traps
+
++-----------------+-------------------------------------------------------+
+| Objective       | This module receives and handles SNMP traps in Trace9.|
++-----------------+-------------------------------------------------------+
+| Pre-Requisites  | Enabled port for sending traps on device end.         |
++-----------------+-------------------------------------------------------+                  
+| Impact          | No                                                    |
++-----------------+-------------------------------------------------------+      
+
+SNMP Traps
+##########
+
+SNMP Traps are unsolicited alert messages sent from a remote SNMP-enabled device (an agent) to a central collector (NMS). Whenever a significant event i.e. coldstart or warmstart occurs on an SNMP-enabled device, Trap is triggered instantaneously by the agent, rather than waiting for a status request from the NMS.
+
+Traps in Trace9 are received and handled by net-snmptrapd daemon. Trap message contains:
+
+1.	Authentication: by a community string in v1 & v2, or a user/password in v3
+2.	The Trap OID: an OID (e.g. .1.3.6.1.2.1.1) which defines the trap
+3.	Trap objects: a list of OIDs with their values, so the system will provide additional information (e.g. interface name).
+
+Configure Traps
+***************
+
+Refer to the OEM documentation for enabling SNMP traps on monitored devices. 
+
+Here’s how to do it on a Fortinet device:
+ https://help.fortinet.com/fweb/570/Content/FortiWeb/fortiweb-admin/snmp_traps.htm 
+
+Add Trap handler in Trace9
+**************************
+
+Click on Traps in side navigation bar, and then click on Add a trap handler in main working area.
+
+
+.. image:: /image/traps.png
+
+This form is divided in to four sections.
+
+1.	Trap Source
+2.	Trap Definition
+3.	Trap Objects Definition
+4.	Display & Rules
+
+
+.. image:: /image/traps-sections.png
+
+1.	Trap Source
+***************
+
+Trap source is the monitored device that will send trap messages. You can choose the Trap source either by host group or host name. 
+
+Check the box to select source by host group and provide host group name in host name field.
+
+
+.. image:: /image/traps-source.png
+
+Provide host name in case you unchecked the “select by host group”. See the image below for reference. 
+
+
+.. image:: /image/traps-addhandler.png
+
+1.	Monitored device in Trace9 on which service will be updated. 
+2.	Service on which the status will be updated. It must accept passive checks. 
+
+2.	Trap Definition
+*******************
+
+.. image:: /image/traps-definition.png
+
+1.	Choose the trap MIB from drop down. The first one is the MIB of trap. Choose the trap type from 2nd drop down, it has previously defined categories for that MIB.
+2.	Provide trap OID or it will be auto filled when you select trap (e.g Trap OID for ColdStart is .1.3.6.1.6.3.1.1.5.1)
+3.	If active this button will add all objects that can be set with this trap. When the add objects button is pressed it will take you to step number 3 i.e Trap Objects Definition
+4.	Time after which the service will be reverted to OK.
+
+3.	Trap Objects Definition
+***************************
+
+Trap Objects Definition will show the list of all objects. It will be used in Displays & Rules as variables later.
+
+
+.. image:: /image/traps-objectdefinition.png
+
+
+1.	Fill in the OID to add objects (manually). If you had clicked add objects in Step number 2 then this would be done automatically. 
+2.	Shortcut shows us the name of variables that are to be used in building rules.
+3.	The value sent by the trap selected earlier.
+4.	Shows the type of trap according to MIB.
+
+4.	Display & Rules
+*******************
+
+In this section you can configure 
+
+a.	Message that will be displayed inside the service when the rule is passed and a trap is received.
+b.	Action listener for the service state.
+
+
+.. image:: /image/traps-displaynrules.png
+
+1.	Display in Trace9 requires a string that can be sent as status to the service. You can only use the previously defined variables.
+2.	Write the rules. (More about rules: https://github.com/patrickpr/trapdirector/blob/master/docs/08-rules-evaluation.md)
+3.	The set of possible actions when the rule matches or if the rule does not match.
+
+*After completing all of the above mentioned steps click on the create button to save the configurations of the trap. Activate this rule for the next upcoming traps to be processed.*
+
+**Update a Rule**
+
+To edit a pre-defined rule, click on Handler inside the traps menu and then click on the rule that you want to edit.
+
+
+.. image:: /image/traps-ruleupdate.png
+
+Clicking the predefined rule will open this page. Here you can make required changes and then click on create to save it.
+
+
+.. image:: /image/traps-ruleupdate-saving.png
+
+
+
+
+

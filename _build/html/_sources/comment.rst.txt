@@ -1,0 +1,30 @@
+*****************************
+13.	Feedback / Comment Module
+*****************************
+
+This module allows user to submit queries/complaints to NMS admin. User can also generate change password query with a password field value to change login password. Password is updated once the query gets approved.
+
++-----------------+-------------------------------------------------------+
+| Objective       | Allows user to submit queries/complaints to NMS admin.|
++-----------------+-------------------------------------------------------+
+| Pre-Requisites  | No                                                    |                                                                                                             
++-----------------+-------------------------------------------------------+                  
+| Impact          | A request would be presented to Admin user for request|
+|                 | approval or further action that needs to be taken.    |                                                                                                                            
++-----------------+-------------------------------------------------------+            
+
+
+How to Use
+##########
+
+Login to Trace9.
+
+Click on Comments/Feedback on left navigation menu. The following information will be displayed.
+
+
+.. image:: /image/comment.png
+
+Click on Add. A form will be displayed to add the feedback. Add Comments or request to Update Password. 
+
+
+.. image:: /image/addcomment.png

@@ -1,0 +1,114 @@
+*******************************
+14. Inventory Management System
+*******************************
+
+The Inventory Management System module provides:
+ 
+1. The facility to manage the inventory receiving, issuance and consumption on the basis of equipment’s serial number.
+2. This module gives user the flexibility to create new receiving inventories with their unique serial number,then issuing them.
+3. Issued Inventory can be viewed on Inventory Issued List View page, user can modify the Site Name of the Inventory.
+4. Any new discovered serial number against any Host Device Name got updated in Inventory Issued against the inventory record's serial number.
+ 
+
+It is developed by using PHP & JavaScript.
+
+How to Use Inventory Management System
+######################################
+
+1.	Login to Trace9 with provided credentials 
+2.	From the navigation menu on left, click on Inventory Management.
+
+
+.. image:: /image/inventorymanagement.png
+
+
+Add Equipment
+*************
+
++-----------------+-------------------------------------------------------------------------------------------------------------------------------+
+| Objective       | To add a receiving inventory along with its necessary details, or can clone any added inventory with different serial number  |
++-----------------+-------------------------------------------------------------------------------------------------------------------------------+
+| Pre-Requisites  | A record of inventory                                                                                                         |
++-----------------+-------------------------------------------------------------------------------------------------------------------------------+
+| Impact          | The Added Inventory will then appear in "Available Equipment" Page.                                                           |
++-----------------+-------------------------------------------------------------------------------------------------------------------------------+
+
+1. Click on Add Equipment. A List View will appear with equipment that has been received along with their Issued/Not Issued Status. 
+
+.. image:: /image/stocksreceiving.png
+
+2. Click on the "Add" Button.A new form will display as shown below:
+
+
+.. image:: /image/stocksreceivingform.png
+
+i.	  Enter Make/Brand of the Device (For Example: Cisco, Huawei, Juniper...)
+ii.	  Enter the Model Number of Device.
+iii.  Enter the unique Serial Number of Device.
+iv.	  Enter the Type of Inventory.
+v.	  Select the Date of Receiving in MS Store. 
+vi.	  Received By is an auto populated field , the name of loggedin user.
+vii.  Click on Add Button to save form.
+
+
+The created Entry will be display in Available Equipment.
+
+.. image:: /image/stockstobeissued.png
+
+Available Equipment
+*******************        
+
+
++-----------------+-----------------------------------------------------------------+
+| Objective       | To issue an equipment                                           |
++-----------------+-----------------------------------------------------------------+
+| Pre-Requisites  | A record of received equipment                                  |
++-----------------+-----------------------------------------------------------------+
+| Impact          | The Added Inventory will then appear in "Issued Equipment" Page.|
++-----------------+-----------------------------------------------------------------+
+  
+
+1. Click on the Issue Equipment Button,it will display a form.  
+2. Select the Serial Number that needs to be issued against the Customer, Issued For(Site Name), Vendor and Zone.
+
+
+.. image:: /image/stockstobeissuedform.png
+
+3. Click on Add button, it will redirect to "Issued Equipment" List View.
+
+
+.. image:: /image/stocksissued.png
+
+
+Deployed Equipment
+******************        
+
+1. It will show the list of deployed equipment , the equipment on which deployement date has been given.
+
+
+.. image:: /image/stocksdeployedlist.png
+
+2. Dismantle Button will provide an option to dismantle an equipment, upon clicking the button a form will open.
+
+
+.. image:: /image/dismantleform.png
+
+
+Dismantle will show in dismantled equipment
+
+Dismantled Equipment
+********************        
+
+1. It will show the list of dismantled equipment.
+
+.. image:: /image/stocksdismantledlist.png
+
+2. Click on "Make it Available" to make site available again with Refurbished condition.
+
+3. User can also add dismantled equipment from this page.
+
+.. image:: /image/inventory-adddismantledequipment.png 
+
+
+
+

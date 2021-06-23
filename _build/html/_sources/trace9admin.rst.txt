@@ -1,0 +1,163 @@
+*****************
+11. Trace 9 Admin
+*****************
+
+This module allows user to create new customers, create sites, add hosts, define new user roles or assign existing roles to users. 
+
+How to Use
+##########
+
+Click on Trace9 Admin on the navigation menu on left.
+
+
+.. image:: /image/trace9admin.png
+
+Four options will be displayed as shown in image below.
+
+
+.. image:: /image/trace9admin-options.png
+
+1.Customer
+**********
+
++-----------------+---------------------------------------------------------+
+| Objective       | To create new customer along with their configured SLA. |
++-----------------+---------------------------------------------------------+
+| Pre-Requisites  | No                                                      |
++-----------------+---------------------------------------------------------+
+| Impact          | This will create the customer on NMS                    |
++-----------------+---------------------------------------------------------+
+
+
+Click on Customer, you will see the already added customers as shown below.
+
+.. image:: /image/trace9admin-customerlistview.png
+
+1.1. Back button will take us to the main page where four options were displayed.
+
+1.2. To add new customer click Add. A form will appear. Fill in the information and press add.
+
+.. image:: /image/trace9admin-addedcustomer.png
+
+1.3. The added Customer will be displayed in the list.
+
+2. Hosts
+********
+
++-----------------+-------------------------------------------+
+| Objective       | To create new Host and view List of Hosts |
++-----------------+-------------------------------------------+
+| Pre-Requisites  | No                                        |
++-----------------+-------------------------------------------+
+| Impact          | This will create the Host on NMS          |
++-----------------+-------------------------------------------+
+
+
+
+.. image:: /image/trace9admin-hosts.png
+
+**1.	Hosts:** This is same as Host on-boarding. Follow the steps in Host on-boarding section to add new host.
+
+**2.	Templates:** This shows already added host templates. You can also add new templates.
+
+
+.. image:: /image/trace9admin-template.png
+
+2.1. Click Add to add new template.
+
+.. image:: /image/trace9admin-addnewtemplate.png
+
+2.2. Click on Tree to see the hierarchical view.
+
+.. image:: /image/trace9admin-hierarchialview.png
+
+**3. Groups:** This shows already added host groups. You can also add a new host group here.
+
+
+.. image:: /image/trace9admin-groups.png
+
+3.1. Click on add button
+
+3.2. You can add a new host group and it will be displayed in the list on left
+
+**4. Choices:** This will show us the already added host choices and also we can add a new host choice.
+
+.. image:: /image/trace9admin-choices.png
+
+4.1. Click on add button.
+
+4.2. You can add new host group and it will be displayed in the list on left.
+
+
+3. User
+*******
+
++-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Objective       | To add new role, user and group, currently user and group added here would not be associated with LDAP. Role will define the permission for user or group |             
++-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Pre-Requisites  | No                                                                                                                                                        |
++-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Impact          | This will create new role associated to the user or group                                                                                                 |
++-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+ 
+
+Click on User on left navigation menu. You will get the options shown below.
+
+
+.. image:: /image/trace9admin-user.png
+
+3.1. Roles button is active when we select user from the previous options
+3.2. User tab shows list of users configured in Trace9
+
+.. image:: /image/trace9admin-userlist.png
+
+In User Groups tab a list of groups of users will be displayed
+
+.. image:: /image/trace9admin-usergroup.png
+
+We can also create a new role and assign that role to a specific user or group of users.
+
+.. image:: /image/trace9admin-userrole.png
+
+4. Activity Log
+****************
+
++-----------------+---------------------------------------------------------------+
+| Objective       |To allow user to deploy any stored changes or modified changes |
++-----------------+---------------------------------------------------------------+
+| Pre-Requisites  | No                                                            |
++-----------------+---------------------------------------------------------------+
+| Impact          | Changes applied would be reflected on NMS                     |
+|                 | after deployment                                              |
++-----------------+---------------------------------------------------------------+
+
+
+Click on Activity Log on left navigation menu. You will get the options shown below.
+
+.. image:: /image/trace9admin-activityloglist.png
+
+1. Activity log shows the activities performed by all users in Trace9
+
+2. When anything is modified or manipulated in Trace9 by users the actions first go to the queue of activities and only by clicking on “deploy” the changes are made. You can also reverse the changes by clicking on a specific activity and then clicking on re deploy
+
+.. image:: /image/trace9admin-deployments-config.png
+
+3.	Click on Infrastructure tab the following will be displayed
+
+3.1.  **Kickstart Wizard:** On clicking Kick start Wizard a form will be displayed fill the form and click on run import. The kick start wizard settings will be imported.
+
+.. image:: /image/trace9admin-kickstartwizard.png
+
+3.2.  **API Users:** Shows the following. You can also add the API user by clicking on add and after that filling in the form.
+
+.. image:: /image/trace9admin-adding-icingaapiuser.png
+
+3.3.  **Endpoints Zones:** End Point Zones shows the list of all zones. By clicking on add you can add a new end point zone.
+
+
+.. image:: /image/trace9admin-adding-endpoint.png
+
+3.4.  **Zones:** Click on Add to add a new zone
+
+.. image:: /image/trace9admin-addingzone.png
+
+

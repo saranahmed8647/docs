@@ -1,0 +1,59 @@
+********************
+6. Ticket Site Visit
+********************
+
+This workflow has been incorporated into NMS to maintain a record for vendor visits and their compliance status.
+
+How To Use:
+###########
+
+Select any Ticket, navigate to Miscellaneous Tab -> Free Fields.
+
+
+.. image:: /image/sitevisit-freefields.png
+
+
+For First Vendor Visit select any option from the given drop down list.
+
+
+.. image:: /image/sitevisit-purpose.png
+
+The selected option will display in Ticket Details.
+
+.. image:: /image/sitevisit-ticketdetails.png
+
+Click on Email Outbound under Communication Tab, to send an email to customer for initiating site visit.
+
+.. image:: /image/sitevisit-emailoutbound.png
+
+Provide Customer Name in “To” field and append “SITEVISIT” into subject and “Vendor Visit Request” in Template.
+
+.. image:: /image/sitevisit-emailsendingtemplate.png
+
+
+On customer end, if the visit has been made, reply back with Visited in Email Body.
+
+
+.. image:: /image/sitevisit-emailbody.png
+
+
+As soon as it receives the reply from customer the NOC Engineer will select the First Visit Status from Drop down options namely Successful or Failed.
+
+.. image:: /image/sitevisit-compliancestatus.png
+
+Go to Dashboard, it will display the ticket under Vendor Visits Tickets
+
+.. image:: /image/sitevisit-panel.png
+
+
+Following Fields have been added to Manual Tickets creation process:
+
+•	Hostname
+•	Region
+•	Customer Name
+•	Site Address
+
+
+.. image:: /image/sitevisit-manualticket.png
+
+ 

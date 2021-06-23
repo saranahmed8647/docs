@@ -1,0 +1,65 @@
+1. Host Onboarding
+==================
+
+Perform following steps to onboard a new host.
+
+1.Click on Director from the left side menu
+
+
+.. image:: /image/1.png
+
+2.Click on Host, list of hosts will appear.
+
+
+.. image:: /image/2.png
+
+3.Click on +Add button ,add new Icinga host window will appear on the right side .
+
+
+.. image:: /image/3.png
+
+4.Choose Network devices template from the drop-down menu.
+
+.. image:: /image/4.png
+
+5.After selecting the template, a form will appear.
+
+
+.. image:: /image/5.png
+
+6.Add unique Host Name, Customer Name, SNMP credentials  and other required fields.
+
+
+.. image:: /image/6.png
+
+7.Click on Icinga agent and zone settings and provide respective zone from the drop-down menu.
+
+.. image:: /image/7.png
+
+8.Press Add button in the bottom.
+
+
+.. image:: /image/8.png
+
+
+9.Window will refresh, and store button will appear
+
+
+.. image:: /image/9.png
+
+10.Click on store your new host will be saved, log will be added in the activity log.
+
+
+.. image:: /image/10.png
+
+11.Click on director then click on activity log, Activity log window will appear.
+
+
+.. image:: /image/11.png
+
+12.Click on deploy pending changes, your changes will be deployed, and your host is successfully added.
+
+
+.. image:: /image/12.png
+
+

@@ -1,0 +1,53 @@
+*******************************
+9. CentOS Network configuration 
+*******************************
+
+An alternative for the nmcli is the nmtui, short for Network Manager Text User Interface, the nmtui is yet another handy tool that allows you to easily configure your network interfaces in Linux distributions using a graphical display by invoking the nmtui command straight from the terminal or even putty.
+To configure a network interface IPv4 address, start by invoking the nmtui tool.
+
+**$ nmtui**
+
+Select the first option ‘Edit a connection’ and hit ENTER.
+
+.. image:: /image/20.png
+ 
+**Edit Network Interface Connection**
+Next, select the interface you want to configure and hit ENTER. In this case, the interface we are configuring is enps03.
+ 
+.. image:: /image/21.png
+
+**Select Network Interface**
+In the next step, key in the preferred IP address and define the subnet mask, default gateway, and DNS servers as shown below.
+ 
+.. image:: /image/22.png
+
+**Configure Network Connection**
+Once you are satisfied with your settings, scroll all the way down and hit ENTER on the ‘OK’ option.
+ 
+.. image:: /image/23.png
+
+**Confirm Network Settings**
+This takes you back to the interfaces screen as shown below. Navigate and hit on the ‘Back’ option.
+ 
+.. image:: /image/24.png
+
+**Network Interface Settings**
+Select ‘Activate a connection’ and then ‘OK’ and hit ENTER.
+
+.. image:: /image/25.png 
+
+
+**Active Network Connection**
+We’re all done now. To go back click on the ‘Back’ option and finally, press ENTER on the ‘quit’ selection.
+ 
+.. image:: /image/28.png 
+
+**Quit Network Configuration**
+Again, to verify that the network interface has acquired the IP address we have just configured, run the command:
+
+**$ ip addr show ens192**
+
+.. image:: /image/29.png 
+
+ 
+

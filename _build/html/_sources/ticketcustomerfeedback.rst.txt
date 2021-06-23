@@ -1,0 +1,38 @@
+***************************
+5. Ticket Customer Feedback
+***************************
+
+Any Ticketing Portal user can asked for customer feedback from any specific customer.
+
+How To Use:
+###########
+
+From Top Navigation , Click on Tickets Tab.
+
+
+.. image:: /image/ticketlist.png
+
+
+Go to Ticket's Detail by clicking the ticket.
+
+
+.. image:: /image/ticketlistdetail.png
+
+From Communication , Click on E-Mail Outbound
+
+
+.. image:: /image/emailoutbound.png
+
+This will open a new pop-up window
+
+1. Provide "To" Address (The customer to whom Customer Feedback Email to be sent)
+2. Append Subject "Customer Feedback".
+3. Select "Customer Feedback" from Text Template.
+4. It will then ask for permission to override current template by new template.
+
+
+.. image:: /image/customerfeedbackemail.png
+
+This will send an Email to customer, if the customer reply back then that customer email will be shown in the Ticket Detail.
+
+ 

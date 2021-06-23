@@ -1,0 +1,33 @@
+1. Firewall Interface Assignement 
+=================================
+
+Assign Interfaces
+*****************
+In Firewall® software, the Interface Assignments screen at Interfaces > (assign) lists the current system interfaces such as WAN and LAN, and a drop-down box next to each with a list of all available network interfaces on the system (real and virtual).
+Reassign an Interface
+Interfaces may be reassigned as follows:
+
+*	Locate the row that contains the interface to reassign
+*	Choose the new underlying interface from the Network Port drop-down list
+*	Click Save
+*	Click Apply Changes
+
+
+Assign a new Interface
+**********************
+New interface assignment varies slightly depending on the firmware version in use.
+2.1.x
+
+*      Click  at the bottom of the screen
+*      Locate the newly interface row at the bottom of the list. It is named OPTx where x is one number higher than any existing OPT interface (or OPT1 if there are no others)
+*      Choose the appropriate Network Port from the drop-down menu in that row
+*      Click Save
+*      Click Apply Changes
+
+
+Delete an Interface
+*******************
+To delete an interface, click  at the end of its row.
+The WAN interface is the only interface that cannot be deleted.
+Other Tabs
+The other tabs on this screen lead to places were other interface types may be created for assignment, such as:

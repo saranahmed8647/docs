@@ -1,0 +1,20 @@
+******************************
+3. Firewall Backup and Restore
+******************************
+
+Backups are a key element for most computing devices. Using a backup, a failed Firewall® device can be up and running in only a few moments.
+Firewall stores all of its settings in a central configuration file, **config.xml**. A backup of this file can easily be used to restore Firewall to a working state.
+
+Backing Up and Restoring a Firewall Configuration File
+******************************************************
+
+Firewall® software keeps its configuration in one convenient XML document. A backup of this document can be saved by going to **Diagnostics > Backup & Restore**, and clicking **Download Configuration as XML**.
+
+Before downloading, review the options available such as only backing up certain areas, or excluding the RRD data from the backup file.
+
+Restoring a configuration is just as easy, click **Choose File**, locate the backup configuration file, then click **Restore Configuration**.
+
+Configuration files can always be restored to any newer or equal Firewall release version. For instance, a 1.x or 2.0.x version configuration backup can be restored no problem to a 2.1.x version. Going backwards is not supported, for instance a 2.1.x configuration cannot be restored to a 2.0.x or earlier version.
+
+Configuration files can be restored to a completely different piece of hardware without issue. If the new target hardware has different NICs than the system where the backup was taken, a prompt will appear to re-assign the NICs after restoring the configuration.
+

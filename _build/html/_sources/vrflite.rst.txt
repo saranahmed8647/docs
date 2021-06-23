@@ -1,0 +1,91 @@
+*************************
+10.VRF-lite Configuration
+*************************
+
+VRF-lite is a feature that enables a service provider to support two or more VPNs, where IP addresses can be overlapped among the VPNs. VRF-lite uses input interfaces to distinguish routes for different VPNs and forms virtual packet-forwarding tables by associating one or more Layer 3 interfaces with each VRF. Interfaces in a VRF can be either physical, such as Ethernet ports, or logical, such as VLAN SVIs, but a Layer 3 interface cannot belong to more than one VRF at any time.
+
+
+VRF-lite Configuration Guidelines 
+*********************************
+Consider these points when configuring VRF in your network: 
+
+* A switch with VRF-lite is shared by multiple customers, and all customers have their own routing tables. 
+
+* Because customers use different VRF tables, the same IP addresses can be reused. Overlapped IP addresses are allowed in different VPNs. 
+
+* VRF-lite lets multiple customers share the same physical link between the PE and the CE. Trunk ports with multiple VLANs separate packets among customers. All customers have their own VLANs. 
+
+* VRF-lite does not support all MPLS-VRF functionality: label exchange, LDP adjacency, or labeled packets. 
+
+* For the PE router, there is no difference between using VRF-lite or using multiple CEs. In Figure 28-1, multiple virtual Layer 3 interfaces are connected to the VRF-lite device. 
+
+* The Catalyst 4500 series switch supports configuring VRF by using physical ports, VLAN SVIs, or a combination of both. The SVIs can be connected through an access port or a trunk port. 
+
+* A customer can use multiple VLANs as long as they do not overlap with those of other customers. A customer's VLANs are mapped to a specific routing table ID that is used to identify the appropriate routing tables stored on the switch. 
+
+* The Layer 3 TCAM resource is shared between all VRFs. To ensure that any one VRF has sufficient CAM space, use the maximum routes command. 
+
+* A Catalyst 4500 series switch using VRF can support one global network and up to 64 VRFs. The total number of routes supported is limited by the size of the TCAM. 
+
+* Most routing protocols (BGP, OSPF, EIGRP, RIP and static routing) can be used between the CE and the PE. However, we recommend using external BGP (EBGP) for these reasons: 
+    
+         BGP does not require multiple algorithms to communicate with multiple CEs. 
+    
+         BGP is designed for passing routing information between systems run by different administrations. 
+    
+         BGP makes it easy to pass attributes of the routes to the CE. 
+
+* VRF-lite does not support IGRP and ISIS. 
+
+* VRF-lite does not affect the packet switching rate. 
+
+* Multicast cannot be configured on the same Layer 3 interface at the same time. 
+
+* The capability vrf-lite subcommand under router ospf should be used when configuring OSPF as the routing protocol between the PE and the CE. 
+
+
+VRF-lite Configuration Example 
+******************************
+**ip vrf BOK**
+ 
+  rd 2907:402
+ 
+  route-target export 2907:402
+
+  route-target import 2907:402**
+
+
+**interface Vlan400**
+
+  description  BOK _ LAN Interface
+ 
+  ip vrf forwarding BOK
+
+  ip address 10.249.149.97 255.255.255.240**
+
+
+**interface Vlan3807**
+ 
+  description BOK
+ 
+  ip vrf forwarding BOK
+
+  ip address 10.249.249.22 255.255.255.252**
+
+
+
+**router bgp 65269**
+ 
+  bgp log-neighbor-changes
+
+  address-family ipv4 vrf BOK
+
+  network 10.249.149.96 mask 255.255.255.240
+
+  neighbor 10.249.249.21 remote-as 17557
+
+  neighbor 10.249.249.21 activate
+
+  neighbor 10.249.249.21 soft-reconfiguration inbound
+
+  exit-address-family

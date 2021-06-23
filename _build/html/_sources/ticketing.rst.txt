@@ -1,0 +1,8 @@
+************
+6. Ticketing
+************
+
+Ticketing navigation tab has been added to redirect to ticketing web through web portal.
+
+
+.. image:: /image/ticketing.png

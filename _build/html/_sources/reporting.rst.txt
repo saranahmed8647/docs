@@ -1,0 +1,587 @@
+************
+3. Reporting
+************
+
+The modules allows user to create report over a specified period with different filters available such as customer, region, Time period, Media type etc.
+
+How To Use
+##########
+
+1.	Login to Trace9 with provided credentials 
+2.	From the navigation menu on left, click on Reporting.
+3.	Select the Report
+
+.. image:: /image/report.png
+
++-----------------+-------------------------------------------------------------------------------------+
+| Objective       | A feature that gives user a reporting functionality and allow user to send that     |
+|                 | generated report to any email address or can be set on scheduling so that the user  |
+|                 | can get that specific report at any specific time of day or any time according to   |
+|                 | the value set by the user.                                                           |
++-----------------+-------------------------------------------------------------------------------------+
+| Pre-Requisites  | No                                                                                  |
++-----------------+-------------------------------------------------------------------------------------+                  
+| Impact          | No                                                                                  |
++-----------------+-------------------------------------------------------------------------------------+    
+
+Main Features
+#############
+
+Below are the main features of reporting:
+
+* Report Emailing
+* Report Scheduling
+
+Key points of Report Emailing
+*****************************
+
+* User has to provide the recipient’s address so the report generated on previous page could be then send to that recipient.
+
+
+.. image:: /image/report-emailing.png
+
+Key points of Report Scheduling
+*******************************
+
+* User has to provide frequency, recipient’s address and starting time of scheduler for report.
+* Frequencies are Minutely, Hourly, Daily, Weekly and Monthly.
+* Starting Time will determine the start of time when the scheduler will start for that report.
+
+
+.. image:: /image/report-scheduling.png
+
+Following reports have been developed:
+
+
+1. All Down Events
+******************
+
+Filters: Customer and Time Frame
+
+Description: This report will show the following statistics in tabular form:
+
+*	Event Time 
+*	Host 
+*	Customer Name
+*	IP Address 
+*	Status of Host 
+*	Message
+
+
+.. image:: /image/report-down-events.png
+
+2.	All Nodes
+*************
+
+Filters: Customer, Media Type and Services Type
+
+Description: This report will show the following statistics in tabular form:
+
+*	Node
+*	Customer Name
+*	IP Address 
+*	Vendor
+*	Media Type 
+*	Services Type
+
+
+.. image:: /image/report-all-nodes.png
+
+3.	Inventory Report
+********************
+
+Filters: Customer
+
+Description: This report will show the following statistics in tabular form:
+
+*	Host Name
+*	System Name
+*	IP Address 
+*	Serial Number 
+*	Site 
+*	Customer Name
+
+
+.. image:: /image/report-inventory.png
+
+4.	Cisco IOS version
+*********************
+
+Filters: Customer
+
+Description: This report will show the following statistics in tabular form:
+
+*	Node Name
+*	IP Address 
+*	Model Number of device
+*	Make
+*	Customer Name
+
+
+.. image:: /image/report-cisco-iosversion.png
+
+5.	Host SLA and availability (7-days)
+**************************************
+
+Filters: Customer
+
+Description: This report will show the following statistics in tabular form:
+
+*	Device Name
+*	Customer 
+*	Availablity Percentage  
+*	Total Downtime
+
+
+.. image:: /image/report-host-availablity-sla-7-days.png
+
+6.	Host SLA – Business Hours
+*****************************
+
+Filters: Customer, Time Frame and Time Period.
+
+Description: This report will show the following statistics in tabular form:
+
+*	Node Name
+*	Customer 
+*	IP Address  
+*	Configured SLA
+*	Average Availability
+
+
+.. image:: /image/report-hostsla-businesshours.png
+
+7.	Host SLA
+************
+
+Filters: Customer, Time Frame and Time Period.
+
+Description: This report will show the following statistics in tabular form:
+
+*	Node Name
+*	Customer 
+*	IP Address  
+*	Configured SLA
+*	Average Availability
+
+
+.. image:: /image/report-host-sla.png
+
+8.	Host Downtime
+*****************
+
+Filters: Customer, Time Frame
+
+Description: This report will show the following statistics in tabular form:
+
+*	Host Name
+*	Customer 
+*	Output  
+*	Availability
+*	Status
+*	Downtime
+*	Configured SLA
+
+
+.. image:: /image/report-hostdowntime.png
+
+9.	Host SLA Region wise
+************************
+
+Filters: Customer, Time Frame, Timeperiod& Region
+
+Description: This report will show the following statistics in tabular form:
+
+*	Node Name
+*	Customer 
+*	IP Address  
+*	Configured SLA
+*	Region
+*	Average Availability
+
+
+.. image:: /image/report-host-sla-region-wise.png
+
+10.	Last Boot Time
+******************
+
+Filters: Customer
+
+Description: This report will show the following statistics in tabular form:
+
+*	Node Name
+*	Customer Name
+*	Last Boot
+*	Machine Type
+
+
+.. image:: /image/report-last-boot-time.png
+
+11.	Interface Downtime detailed
+*******************************
+
+Filters: Customer and Time Frame
+
+Description: This report will show the following statistics in tabular form:
+
+*	Host Name
+*	Customer Name
+*	Start Date/Time
+*	End Date/Time
+*	Media Type
+*	Status
+*	Total Duration in minutes
+
+
+.. image:: /image/report-interface-downtime-detail.png
+
+12.	Interface Downtime summarized
+*********************************
+
+Filters: Customer and Time Frame
+
+Description: This report will show the following statistics in tabular form:
+
+*	Host Name
+*	Customer Name
+*	Interface 
+*	Status
+*	Total Duration in minutes
+
+
+.. image:: /image/report-interface-downtime-summarized.png
+
+13.	Current CPU Load
+********************
+
+Filters: Customer
+ 
+Description: This report will show the following statistics in tabular form:
+
+*	Host Name
+*	Customer Name
+*	CPU Load
+
+
+.. image:: /image/report-cpu-load.png
+
+14.	Top 25 Hosts - Memory Utilization
+*************************************
+
+Filters: Customer and Time Frame
+
+Description: This report will show the following statistics in tabular form:
+
+*	Host Name
+*	Customer Name
+*	Memory Utilization 
+
+
+.. image:: /image/report-memory-utilization.png
+
+15.	Top 25 Hosts- Packet Loss
+*****************************
+
+Filters: Customer and Time Frame
+
+Description: This report will show the following statistics in tabular form:
+
+*	Host Name
+*	Customer Name
+*	Avg. Packet Loss
+
+
+.. image:: /image/report-packetloss.png
+
+16.	Day End Ticket Summary
+**************************
+
+Filters: Time Frame
+
+Description: This report will show the following statistics in tabular form:
+
+*	Queue
+*	Total Tickets: Sum of Auto Closed , Resolved and Pending Tickets.
+*	New Tickets : Tickets that are in "new" state.
+*	Open : Tickets that are in "open" state.
+*	Auto Closed Tickets: Tickets that have been marked closed before going into open state.
+*	Resolved Tickets: Tickets that get closed after coming previously from open state.
+*	Escalated : Tickets that have been escalated (age greater than 8 Hours and still not closed)
+* 	In Progress Tickets: Tickets having state being marked as "in progress" by NOC team.
+*	Pending Tickets: Tickets that are not closed yet.
+
+
+.. image:: /image/report-ticket-summary-status.png
+
+17.	Top 25 Down Nodes
+*********************
+
+Filters:  Customer & Time Frame
+
+Description: This report will show the following statistics in tabular form:
+
+*	Host Name
+*	Customer Name
+*	Percent Down
+
+
+.. image:: /image/report-down-nodes.png
+
+18.	MS NOC Day End Report
+*************************
+
+Filters:  Time Frame
+
+Description: This report will show the following statistics in tabular form:
+
+*	Ticket ID
+*	Complaint Date & Time
+*	Location
+*	Customer
+*	Hostname
+*	Region 
+*	Complaint Status
+*	Media Type
+*	Resolution Date & Time
+*	Total Outage
+*	Ticket Status
+*	Remarks
+
+
+.. image:: /image/report-ms-noc-day-end-report.png
+
+19.	Total Outage
+****************
+
+Filters:  Customer & Time Frame
+
+Description: This report will show the following statistics in tabular form:
+
+*	Host Name
+*	Customer
+*	Up(%)
+*	Uptime
+*	Media Outage (%)
+*	Media Outage Time
+*	Power Outage (%)
+*	Power Outage Time
+
+
+.. image:: /image/report-total-outage.png
+
+
+20.	Interface Media Wise Report
+*******************************
+
+Filters:  Customer & Time Frame
+
+Description: This report will show the following statistics in tabular form:
+
+*	Host Name
+*	Customer
+*	Service Name
+*	Media Type
+*	Interface IP
+*	Status
+*	Up/Down Since
+*	Up %
+
+
+.. image:: /image/report-interface-mediawise.png
+
+
+21.	All Sites
+*************
+
+Filters:  Customer
+
+Description: This report will show the following statistics in tabular form:
+
+*	Status in NMS
+*	Customer
+*	Node
+*	IP Address
+*	Branch Code
+*	Contact Info
+*	Geolocation
+*	Location
+*	Site
+*	Software Version
+*	System Name
+*	System Description
+*	Vendor
+*	APN
+*	Domain Name
+*	SIM CCID
+*	SIM MDN
+*	LAN IP
+*	Link Redundancy
+*	WAN IP
+*	Device Model
+*	Serial Number
+*	Device SLA
+*	Branch Primary IP
+*	Branch Secondary IP
+*	Exchange Primary IP
+*	Excahnge Secondary IP
+*	Customer POC Name
+*	Customer POC Email
+*	Customer POC Phone
+*	PTCL POC Name
+*	PTCL POC Email
+*	PTCL POC Phone
+*	Vendor POC Name
+*	Vendor POC Email
+*	Vendor POC Phone
+*	Onsite POC Name
+*	Onsite POC Phone
+*	Commissioning Date
+*	Termination Date
+*	Termination Reason
+*	SNMPv2 Community String
+*	SNMP version
+*	SNMPv3 Authentication Level
+*	SNMPv3 Authentication Password
+*	SNMPv3 Authentication Type
+*	SNMPv3 Privacy Type
+*	SNMPv3 Privacy Password
+*	SNMPv3 Username
+*	SNMPv3 Password
+*	PTCL Regions
+*	Regions
+*	Area Control Centers
+
+	
+.. image:: /image/report-interface-mediawise.png
+
+
+22.	All Services
+****************
+
+Filters:  Customer
+
+Description: This report will show the following statistics in tabular form:
+
+
+*	Customer
+*	Host Name
+*	IP Address
+*	Service Name
+*	Media Type
+*	Media Vendor
+*	CRM Object ID 
+*	Interface Type
+*	Interface IP
+*	Services Type
+*	Exchange Name
+*	PE Interface 
+*	PE Router Address
+*	PE Router Name
+*	Tranmission Port ID
+*	VLAN
+*	SNMP Interface
+*	Active in NMS
+
+.. image:: /image/report-all-services.png
+
+
+23.	BGP Traps Report
+********************
+
+Filters:  Time Frame
+
+Description: This report will show the following statistics in tabular form:
+
+
+*	IP Address
+*	Traps Received Date
+*	Status
+
+.. image:: /image/reports-bgptraps.png
+
+
+24.	Customer Feedback Report
+****************************
+
+Filters:  Customer & Time Frame
+
+Description: This report will show the following statistics in tabular form:
+
+
+*	Customer 
+*	Total Feedback Tickets
+*	Feedback Received
+*	Excellent(%)
+*	Satisfactory(%)
+*	Average(%)
+*	Below Average(%)
+*	Unsatisfactory(%)
+*	Feedback Average
+
+.. image:: /image/report-customerfeedbacksummary.png
+
+25.	Overall Customer Feedback 
+*****************************
+
+Filters:  Customer & Time Frame
+
+Description: This report will show the following statistics in tabular form:
+
+
+*	Ticket ID
+*	Title
+*	Customer 
+*	Status
+*	Customer Feedback
+
+.. image:: /image/report-overallcustomerfeedback.png
+
+
+26.	MS NOC Performance Report
+*****************************
+
+Filters:  TimeFrame
+
+Description: This report will show the following statistics in tabular form:
+
+
+*	Queue
+*	Total Attended Tickets : Total Tickets that went into In-Progress State.
+*	First Reponse Within 30 Minutes : Total Tickets that were marked Locked within 30 minutes of their creation.
+*	Resolved Tickets : Tickets moved to closed successful having last state as "in progress"
+*	Pending Tickets : Tickets remain unclosed.
+*	Escalated Tickets: Tickets moved to escalated state having last state as "in progress"
+*	Tickets Closed Within 48 Hours: Tickets that got closed within 48 hours of their creation.
+*	Tickets Closed Within 48 Hours % : percentage of tickets that got closed within 48 hours of their creation.
+*	Tickets Closed Within 24 Hours: Tickets that got closed within 24 hours of their creation.
+*	Tickets Closed Within 24 Hours % : percentage of tickets that got closed within 24 hours of their creation.
+
+.. image:: /image/report-msnoc.png
+
+The above report only shows those tickets that went into in-progress state.
+
+27.	Site Visit Report
+*********************
+
+Filters:  TimeFrame & Region
+
+Description: This report will show the following statistics in tabular form:
+
+
+*	Ticket ID
+*	Region
+*	Purpose of Visit
+*	Visit Number
+*	Date of Visit Request
+*	Duration
+*	Visit Compliance Status
+*	Visit Category
+*	Hostname
+*	Customer
+* 	Site Address
+*	Field Engineer
+* 	RCA
+
+.. image:: /image/reporting-sitevisitreport.png
+
+

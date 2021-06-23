@@ -1,0 +1,167 @@
+****************
+1. Autodiscovery
+****************
+
+The Auto Discovery module provides:
+
+1.	Host Discovery
+2.	Interface Discovery
+3.	CDP & LLDP Supported Device’s Discovery
+
+This module gives user the flexibility to create objects, hosts or services which appear in list as a result of discovery. 
+
+It is developed by using SNMP PHP Open Source Libraries that help get SNMP information from nodes. User will initially provide the SNMP credentials in the input form and on that basis of that information the outcome will be displayed. 
+
+How to Use Auto Discovery
+#########################
+
+1.	Login to Trace9 with provided credentials 
+2.	From the navigation menu on left, click on Auto Discovery.
+3.	Four auto-discovery options are available: Hosts, Interface, CDP, LLDP
+
+.. image:: /image/autodiscovery-all.png
+
+
+Host Discovery
+**************
+
++-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+| Objective       | To create single Host or multiple Hosts on NMS from the List view that will display the Hosts that are discovered as a result of Host Discovery. |
++-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+| Pre-Requisites  | A Subnet address with SNMP credentials                                                                                                           |
++-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+| Impact          | On selecting specific Host and upon submitting it will create a Host on NMS and add SNMP credentials Information as custom fields                |
++-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
+This allow user to discover the host and its fields using SNMP. 
+
+To auto discover host related data follow these steps: 
+
+1. Click on Hosts. A form will appear on screen as shown below. 
+
+.. image:: /image/autodiscovery-host.png
+
+i.	  Enter IP address of the Host (End device e.g. Router IP) which you want to discover
+ii.	  Select SNMP version from drop down that is configured on the end device (e.g v1,v2,v3)
+iii.  If you have selected SNMP v2 or v1 from the drop down then fill in the Community String that is configured on the device (e.g. Public, MWS_NOC etc.)
+iv.	  If you select SNMP v3 in step 2 from drop down then fill in this field with respect to device configuration 
+v.	  Choose Security Level from drop down. It also depends on what is configured on device. 
+vi.	  If you have selected SNMP v3 in step 2 then select Authentication Protocol from drop down (MD5 or SHA)
+vii.  If you have selected SNMP v3 in step 2 then select Privacy Protocol from drop down (AES or DES)
+viii. Provide Authentication Phrase if you have selected SNMP v3 in step 2
+ix.	  Provide Privacy Phrase if you have selected SNMP v3 in step 2  	
+x.	  After filling in all of the above information correctly, click on scan network and device details will be displayed as shown below
+
+
+.. image:: /image/autodiscovery-discoveredhost.png
+
+2. Click the checkbox on the left side of IP Address and then click submit.
+
+You will be redirected to Host on-boarding form where most of the information will be already filled. Add the host. 
+
+
+Interface Discovery
+*******************
+
+
++-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Objective       |To enable SNMP service on single or multiple interfaces those are discovered as a result of Interface discovery of any selected Host that is already created on NMS.|
++-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Pre-Requisites  | No                                                                                                                                                                 |
++-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+                  
+| Impact          | On selecting interface/interfaces and upon submitting it will create a SNMP service on NMS associated with that selected Host it will then monitor the selected    |
+|                 | Interface/Interfaces of that Host.                                                                                                                                 |
++-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+            
+
+1. Click on Interface on left side menu under Auto Discovery. A page will open with a drop down list of all cutomers and their respective hosts that have been on-boarded in to Trace9.  
+2. Select the Customer.
+
+
+.. image:: /image/interfacediscovery-customer.png
+
+3. Select a host from the list and press the “Search for network interfaces” button.
+
+
+.. image:: /image/interfacediscovery-hosts.png
+
+A list of interfaces will appear. Check the interfaces you want to monitor and at the end of page click on monitor interfaces for hosts button. 
+
+
+.. image:: /image/autodiscovery-interface.png
+
+The Interfaces will be added as a service to the specific host and monitoring will be started for the checked interfaces.
+
+CDP(Cisco Discovery Protocol) Device's Discovery
+************************************************
+
++-----------------+-------------------------------------------------------------------------------------+
+| Objective       | To discover devices that supports CDP protocol (propriety Cisco Discovery protocol).|
++-----------------+-------------------------------------------------------------------------------------+
+| Pre-Requisites  | IP Address and SNMP credential’s Information.                                       |
++-----------------+-------------------------------------------------------------------------------------+                  
+| Impact          | It will create the selected CDP supported Host or multiple CDP supported Hosts on   |
+|                 | NMS                                                                                 |
++-----------------+-------------------------------------------------------------------------------------+            
+
+This allows to discover Cisco devices using SNMP. 
+
+1. Click on CDP, a form will appear on screen as shown below. 
+
+
+.. image:: /image/autodiscovery-cdp.png
+
+i.	  Enter IP address of the Host (end device e.g. Router IP) which you want to discover
+ii.	  Select SNMP version from drop down that is configured on the end device (e.g. v1,v2,v3)
+iii.  If you have selected SNMP v2 or v1 from the drop down then fill in the Community String that is configured on the device (e.g. Public, MWS_NOC etc.)
+iv.	  If you select SNMP v3 in step 2 from drop down then fill in this field with respect to device configuration 
+v.	  Choose Security Level from drop down. It also depends on what is configured on the device
+vi.	  If you have selected SNMP v3 in step 2 then select Authentication Protocol from drop down (MD5 or SHA)
+vii.  If you have selected SNMP v3 in step 2 then select Privacy Protocol from drop down (AES or DES)
+viii. Provide Authentication Phrase if you have selected SNMP v3 in step 2
+ix.	  Provide Privacy Phrase if you have selected SNMP v3 in step 2  	
+x.	  After filling in all of the above information correctly, click on scan network and. Device details will be displayed as shown below
+
+
+.. image:: /image/cdpdiscovery-hosts.png
+
+2. Click the checkbox on the left side of IP Address and then click submit 
+
+You will be redirected to Host on-boarding form where most of the information will be already filled. Add the host.
+
+
+LLDP(Link Layer Discovery Protocol) Device's Discovery
+******************************************************
+
+This allows us to discover the devices that exist on Link Layer or use Link Layer Protocol.
+
++-----------------+-------------------------------------------------------------------------------------+
+| Objective       | To discover devices that supports LLDP protocol (propriety Data Link Layer protocol)|
++-----------------+-------------------------------------------------------------------------------------+
+| Pre-Requisites  | IP Address and SNMP credential’s Information.                                       |
++-----------------+-------------------------------------------------------------------------------------+                  
+| Impact          | It will create the selected LLDP supported Host or multiple LLDP supported Hosts on |
+|                 | NMS                                                                                 |
++-----------------+-------------------------------------------------------------------------------------+    
+
+1. Click on LLDP, a form will appear on screen as shown below. 
+
+.. image:: /image/autodiscovery-lldp.png
+
+i.	  Enter IP address of the Host (end device e.g. Router IP) which you want to discover
+ii.	  Select SNMP version from drop down that is configured on the end device (e.g. v1,v2,v3)
+iii.  If you have selected SNMP v2 or v1 from the drop down then fill in the Community String that is configured on the device (e.g. Public, MWS_NOC etc.)
+iv.	  If you select SNMP v3 in step 2 from drop down then fill in this field with respect to device configuration 
+v.	  Choose Security Level from drop down. It also depends on what is configured on the device
+vi.	  If you have selected SNMP v3 in step 2 then select Authentication Protocol from drop down (MD5 or SHA)
+vii.  If you have selected SNMP v3 in step 2 then select Privacy Protocol from drop down (AES or DES)
+viii. Provide Authentication Phrase if you have selected SNMP v3 in step 2
+ix.	  Provide Privacy Phrase if you have selected SNMP v3 in step 2  	
+x.	  After filling in all of the above information correctly, click on scan network and. Device details will be displayed as shown below
+
+.. image:: /image/lldpdiscovery-hosts.png
+
+
+2. Click the checkbox on the left side of IP Address and then click submit 
+
+You will be redirected to Host on-boarding form where most of the information will be already filled. Add the host.

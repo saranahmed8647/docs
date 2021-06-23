@@ -1,0 +1,68 @@
+****************
+4. Ticket States
+****************
+Predefined states
+*****************
+TICKETING allows you to change predefined ticket states and their types, or even add new ones. Two attributes are important for a state: the state name and the state type. 
+The default states of TICKETING are: 'closed successful', 'closed unsuccessful', 'merged', 'new', 'open', 'pending auto close+', 'pending auto close-', 'pending reminder' and 'removed'. 
+
+New
+***
+Tickets are usually in this state when created from incoming e-mails. 
+
+Open
+*****
+This is the default state for tickets assigned to queues and agents. 
+
+Pending reminder
+****************
+After the pending time has expired, the ticket owner will receive a reminder email concerning the ticket. If the ticket is not locked, the reminder will be sent to all agents in the queue. Reminder tickets will only be sent out during business hours, and are repeatedly sent every 24 hours until the ticket state is changed by the agent. Time spent by the ticket in this status will still add towards the escalation time calculation. 
+
+Pending auto close-
+*******************
+Tickets in this status will be set to "Closed Unsuccessful" if the pending time has expired. Time spent by the ticket in this status will still add towards the escalation time calculation. 
+
+Pending auto close+
+*******************
+Tickets in this status will be set to "Closed Successful" if the pending time has expired. Time spent by the ticket in this status will still add towards the escalation time calculation. 
+
+Merged
+******
+This is the state for tickets that have been merged with other tickets. 
+
+Removed
+*******
+This is the state for tickets that have been removed by the customer. Tickets will not really be deleted, they are just no longer shown as open. In order to enable this state in the customer interface you need to add the state type "removed" to the sysconfig setting "Ticket::Frontend::CustomerTicketZoom###StateType". 
+
+Closed Successful
+*****************
+This is the end state for tickets that have been successfully resolved. Depending on your configuration, you may or may not be able to reopen closed tickets. 
+
+Closed Unsuccessful
+*******************
+This is the end state for tickets that have NOT been successfully resolved. Depending on your configuration, you may or may not be able to reopen closed tickets. 
+
+Customizing states
+*******************
+
+Every state has a name (state-name) and a type (state-type). Click on the States link on the Admin page and press the button "Add state" to create a new state. You can freely choose the name of a new state. The state types can not be changed via the web interface. The database has to be directly modified if you want to add new types or change existing names. The default state types should typically not be modified as this can yield unpredictable results. For instance, escalation calculations and the unlock feature are based on specific state types. 
+
+Customized States
+*****************
+
+Following customized states has been added into NMS:
+
+1. Escalated
+2. In Progress
+
+1. Escalated
+************
+
+Tickets's state are marked as escalated when their solution time get expired.Currently the solution time is 8 hours, so after 8 hours the ticket's state changes to escalated if the ticket would not have been closed till that time.
+
+2. In Progress
+**************
+
+In Progress state has been added into the system for the NOC resource to mark any ticket in in progress state.  
+
+

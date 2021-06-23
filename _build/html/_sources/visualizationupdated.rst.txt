@@ -1,0 +1,1122 @@
+****************
+5. Visualization
+****************
+
+Visualization navigation tab has been added to redirect to dashboards through web portal
+
+
+
+
+
+Dashboards
+##########
+
+Following Dashboards has been added into NMS
+
+1.Trace9 Home
+****************************
+
+Trace9 home dashboard shows the following information:
+
+* *Trace9 Self monitoring*
+
+* *PTCL Summary 360*
+
+* *South Summary 360*
+
+* *North Summary 360*
+
+* *Central Summary 360*
+
+* *HBL Summary 360*
+
+Drill down dashboards available on each panel
+
+.. image:: /image/visualization.PNG
+
+2.PTCL Summary 360
+****************************
+
+* **Healthy CPEs**: Criteria for counting healthy CPEs is given below:
+	#. For ICMP protocol only; CPE will be healthy if all links terminated at a site are reachable through ICMP only.
+	#. For ICMP & SNMP both; CPE will be healthy if all links terminated at a site are reachable through ICMP & SNMP both.
+	#. Drill-down link will show the list of healthy CPEs
+
+* **Protocol Down**: A criterion for counting Protocol down CPEs is given below:
+	#. For ICMP & SNMP both; If ALL links at a site are working, but ICMP or SNMP monitoring is failed.
+	#. Drill-down link will show the list of Protocol down CPEs
+
+* **Link Down(Other than Single Media Sites)**: A criterion for counting Link down CPEs is given below:
+	#. ICMP: If any one Link of a site is Down, ICMP must be down for that link irrespective of SNMP status.
+	#. For ICMP & SNMP both; If any one Link of a site is Down, both ICMP & SNMP must be down for that link.
+	#. Drill-down link will show the list of Link down CPEs
+
+* **Site Down**: A criterion for counting Site down CPEs is given below:
+	#. ICMP: If ICMP monitoring failed for ALL links of a site.
+	#. For ICMP & SNMP both; if both ICMP & SNMP monitoring failed for ALL links of a site.
+	#. Drill-down link will show the list of Site down CPEs
+
+* **Dismantled Sites**: Total count of CPEs that are disabled and marked as dismantled. 
+	#. Drill-down link will show the dismantled CPEs.
+	#. These sites will be excluded from *Site Down CPEs* and *Disabled CPEs*.
+
+* **Disabled CPEs**: Total count of CPEs that are disabled. Drill-down link will show the disabled CPEs 
+
+* **Reachability Issue**: Total count of some specific list of CPEs shared by PTCL team that are unreachable. 
+	#. Drill-down link will show the list of these CPEs
+	#. These sites will be excluded from *Site Down CPEs* 
+
+* **HBL Site Down**: A criterion for counting HBL Site down CPEs is given below:
+	#. ICMP: If ICMP monitoring failed for ALL links of an HBL site.
+	#. For ICMP & SNMP both; if both ICMP & SNMP monitoring failed for ALL links of an HBL site.
+	#. Drill-down link will show the list of Site down HBL CPEs
+
+* **Total CPEs**: Total count of CPEs
+
+* **Total Customers**: Total count of customers
+
+* **All Links**: Total links on NMS
+
+* **LTE Site Down**: A criterion for counting LTE Site down CPEs is given below:
+	#. ICMP: If ICMP monitoring failed for ALL links of an LTE site.
+	#. For ICMP & SNMP both; if both ICMP & SNMP monitoring failed for ALL links of an LTE site.
+	#. Drill-down link will show the list of Site down LTE CPEs
+
+* **CPE Status**: Count of UP and DOWN CPEs
+
+* **Media wise spread**: Count of Media links of CPEs
+
+* **Achieved SLA (%)**: SLA of different hosts categorize by region
+
+* **All Customers SLA**: SLA of different hosts altogether.
+
+* **Vendor Spread**: Total count vendors on NMS
+
+* **CPE Status Region-wise**: Total count of UP and DOWN CPEs categorize by region
+
+* **Down Interfaces** : Interface List in Tabular form
+
+.. image:: /image/dashboard-summary360.png
+
+
+2.	Customer Status
+***********************
+
+Customer Status dashboard shows the following information:
+
+* *Customer Name*
+
+* *Status Code*
+
+* *Total CPEs* 
+
+* *Up CPEs*
+
+* *Down CPEs*
+
+Drill-down link will show the Customer Summary Dashboard
+
+Data filters
+--------------
+
+* This dashboard currently has a Status filter available on it.
+
+	**Filter with All as value**
+
+	.. image:: /image/customer-filter-all.png
+
+
+	**Filter with available list of customer as value**
+
+	.. image:: /image/customer-filter.png
+
+.. image:: /image/dashboard-customerstatus.png
+
+
+3.	Customer Summary Dashboard
+**********************************
+
+* *Location Count*
+
+* *Device Count*
+
+* *Down Nodes*
+
+* *Location Health*
+
+* *Device Health*
+
+* *All devices*
+ 
+* *Device Status*
+
+.. image:: /image/dashboard-customersummary.png
+
+
+
+4.	Site Details
+********************
+
+Site Details will show the following information
+
+* *Device Info* 
+
+* *Health Checks*
+
+* *Router Uptime*
+
+* *Health*
+ 
+* *Memory Utilization(%)*
+
+* *Last CPU Utilization (%)*
+
+* *Host State Timeline*
+
+* *Host Availability*
+
+* *SLA Breakdown*
+
+* *Connectivity View*
+
+* *Interface Info*
+
+* *Media Patching Details*
+
+* *Interfaces states Timeline*
+
+* *CPU Trend*
+
+* *Memory Trend*
+
+* *Response Time*
+
+* *Power Supply Module Status*
+
+* *Module Temperature*
+
+* *Ticket History & Details*
+
+Drill-down link under interface Info will show the Interface detail dashboard and Network Top 10.
+
+
+.. image:: /image/dashboard-sitedetails.png
+
+This dashboard also provides console access.
+
+
+.. image:: /image/dashboard-consoleaccess.png
+ 
+Interface Detail
+****************
+
+Interface detail will show the following Information:
+
+* *Status of Link*
+
+* *Speed of Link* 
+
+* *Receive Errors* 
+
+* *Transmit Errors*
+
+* *Transmit Discards*
+
+* *Receive Discards*
+
+* *Link Traffic*
+
+* *Interface State Timeline*
+
+* *Last 10 Interface Events*
+
+
+.. image:: /image/dashboard-interfacedetail.png
+
+5.	Network Top 10
+**********************
+
+Network Top 10 will show the following Information:
+
+* *Top Interfaces summary by in bps*
+
+* *Top Interfaces summary by out bps*
+
+* *Top Interfaces by percent utilization*
+
+* *Top Nodes by response times*
+
+* *Top Nodes by Memory utilization*
+
+* *Top Nodes by Average CPU Load*
+
+
+.. image:: /image/dashboard-networktop10.png
+
+6.	Health Dashboard
+************************
+
+Health Dashboard shows the following Information:
+
+* *Down Health Alerts* 
+
+* *Down Health Alerts of different region and Infrastructure servers.*
+
+* *CPU utilization and Memory Trend of different regions and Infrastructure servers.*
+
+Sound is also generated on alerts on the dashboards
+
+
+.. image:: /image/dashboard-health.png
+
+
+7.  Managed Surveillance Dashboard
+**********************************
+
+This dashboard shows the details related to surveillance nodes and their cameras.
+
+How to access this dashboard?
+=============================
+* From the Summary 360 dashboard, click on the Managed Surveillance Dashboard button.
+
+.. image:: /image/menu-summary360.png
+
+* The managed surveillance dashboard will be opened on the screen.
+
+.. image:: /image/managed-surveillance-dashboard.png
+
+* You can navigate on the **i** icon (top-left corner of the panel) for details of the respective panel, as shown in the flow video in this article.
+
+* Also, three new drill-down dashboards added for this dashboard, that is as follows:
+
+	* **Surveillance Node Status** - If you click on the **i** icon of **Up/Down Sites** panel, a link of this dashboard will appear
+	
+		
+		.. image:: /image/surveillance-node-drilldown.png
+
+
+	Information about the Surveillance Node Status dashboard in *Surveillance Node Status Dashboard* section.
+
+	* **Surveillance Nodes Status Regionally** - If you click on the **i** icon of **North Region Status** or **Central Region Status** or **South Region Status** panels, a link of this dashboard will appear,
+		* **Variable linkage:** When you click the link from any of the above-mentioned panels, the region parameter is passed to this dashboard, which will be used for updating the data accordingly.
+			* **North Region Status:** Variable region will be North
+
+			* **Central Region Status:** Variable region will be Central
+
+			* **South Region Status:** Variable region will be South
+
+	Information about the Surveillance Node Status Regionally dashboard in *Surveillance Node Status Regionally Dashboard* section.
+
+	* **Camera Details** - If you click on any status from the following columns in the **Camera Status Details panel**, this dashboard will be opened.:
+			* Camera Switch Status
+			* Camera ATM Status
+			* Camera Hall Status
+			* Camera Teller Status
+			* Camera Vault Status
+			* Camera Entrance Status 
+
+		* **Variable Linkage:** When you click the link on any camera status from the above-mentioned columns, the Node Name and Camera Name(column header) will be passed as parameters to this dashboard, which will be used to update the dashboard accordingly.
+
+			* **Camera Switch Status:** Variable node will be the respective node in the selected row and the variable camera will be Camera Switch
+
+			* **Camera ATM Status:** Variable node will be the respective node in the selected row and the variable camera will be Camera ATM
+
+			* **Camera Hall Status:** Variable node will be the respective node in the selected row and the variable camera will be Camera Hall
+
+			* **Camera Teller Status:** Variable node will be the respective node in the selected row and the variable camera will be Camera Teller
+
+			* **Camera Vault Status:** Variable node will be the respective node in the selected row and the variable camera will be Camera Vault
+
+			* **Camera Entrance Status:** Variable node will be the respective node in the selected row and the variable camera will be Camera Entrance
+						
+	Information about the Camera Details dashboard in *Camera Details Dashboard* section.
+
+
+8.  Surveillance Node Status Dashboard
+**************************************
+* This dashboard shows a list of surveillance nodes that with following information:
+
+	* Customer Name
+	* Node Name
+	* Camera Name
+	* Camera State
+
+
+.. image:: /image/surveillance-node-status.png
+
+* **Drill-down:** A drill-down is added on the **Node Name** column for the complete site details. It will drill down to **Site Details** dashboard
+
+	.. image:: /image/surveillance-node-status-drilldown.png
+
+9.  Surveillance Node Status Regionally Dashboard
+*************************************************
+* This dashboard shows a list of surveillance nodes that with following information: 
+	* Customer Name 
+	* Node Name
+	* Camera Name 
+	* Camera State
+	
+	**Surveillance Nodes when region variable is set to North**
+
+	.. image:: /image/surveillance-node-north-region.png	
+	
+	|	
+
+	**Surveillance Nodes when region variable is set to South**
+
+	.. image:: /image/surveillance-node-south-region.png
+
+	|	
+
+	**Surveillance Nodes when region variable is set to Central**
+	
+	.. image:: /image/surveillance-node-central-region.png
+
+10.  Camera Details Dashboard
+******************************
+* This dashboard shows the details related to camera(s) which shows the details related to the camera selected from the Camera Status Details panel in the Managed Surveillance dashboard.
+
+.. image:: /image/camera-details-dashboard.png
+
+
+* It shows a list of panels based on the parameters passed from the previous dashboard, details are as follows:
+
+i.	Camera Health
+=====================
+
+Health status based on CPE and its cameras status
+
+	.. image:: /image/camera-heallth-panel.png
+
+ii.	Camera Availability
+===========================
+
+Availability of camera based on the time interval selected.
+
+	.. image:: /image/camera-availability-panel.png
+
+iii. Health Checks
+===================
+
+The health checks used to calculate camera health.
+
+	.. image:: /image/camera-health-checks-panel.png
+
+iv. Camera State Timeline
+==========================
+
+The complete state change timeline of the selected camera(s)
+
+	.. image:: /image/camera-state-timeline-panel.png
+
+v.	Data Filters
+====================
+
+This dashboard has two types of data filters. i.e. Node-based and Camera-based.
+
+Node-based filter
+------------------
+
+A list of surveillance nodes will appear. This filter takes the value from the Managed Surveillance Dashboard when being drilled down.
+
+	.. image:: /image/nodebased-filter.png
+
+Camera-based filter
+-------------------
+
+A list of cameras of the selected node will appear. This filter takes the value from the Managed Surveillance Dashboard when being drilled down.
+
+	.. image:: /image/camerabased-filter.png
+
+11.	LTE Media Dashboard
+===============================
+This dashboard shows the following information about the LTE sites:
+
+	#. **Total Customers:** The total count of customers that have LTE media configured and active.
+
+	#. **Total Sites:** The total count of sites that have LTE media configured and active.
+
+	#. **Up/Down Medias:** The count of up/down LTE links
+
+	#. **Media Status:** The count and percentage of up/down LTE links based on status
+
+	#. **Region-wise Spread:** Shows the grouping of nodes with LTE media based on their regions
+
+	#. **LTE Customer SLA:** Shows the availability percentage of LTE media nodes.
+
+	#. **North Region Status:** Shows the current state of all the nodes with LTE media in the North region i.e. UP or DOWN.
+
+	#. **Central Region Status:** Shows the current state of all the nodes with LTE media in the Central region i.e. UP or DOWN.
+
+	#. **South Region Status:** Shows the current state of all the nodes with LTE media in the South region i.e. UP or DOWN.
+
+	#. **LTE Media Status Details:** Shows the current state of all nodes which have LTE media i.e. UP or DOWN.
+
+		.. image:: /image/lte-media-dashboard.png
+
+How to access this dashboard
+-------------------------------------
+
+* Navigate to the Summary 360 dashboard, click on the LTE Media Dashboard button.
+	
+	.. image:: /image/lte-menu-summary360.png
+	
+* The LTE Media Dashboard will be opened.
+
+
+Drill-down Dashboards
+-------------------------------
+
+* Two drill-down dashboards are added to this dashboard.
+
+	#. **LTE Status:** Added to Up/Down Sites and CPE Status panels
+
+	#. **LTE Node Status Regionally:** Added to North Region Status, South Region Status, and Central Region Status
+
+	Information about the LTE Status and LTE Node Status Regionally  in *LTE Status* and *LTE Node Status Regionally* section.
+
+
+Data filters
+--------------
+
+* This dashboard currently has a Customer filter available on it.
+
+	**Filter with All as value**
+
+	.. image:: /image/customer-filter-all.png
+
+
+	**Filter with available list of customer as value**
+
+	.. image:: /image/customer-filter.png
+
+12.	LTE Status Dashboard
+===============================
+* This dashboard shows a list of LTE nodes with following information: 
+	* Node Name 
+	* Customer Name
+	* Interface Name 
+	* LTE State 
+
+.. image:: /image/lte-status-dashboard.png
+
+How to access this dashboard
+------------------------------
+
+* Navigate to the **CPE Status** or **Up/Down Sites** panels in the LTE Media Dashboard, click on the **i** icon button.
+
+	.. image:: /image/LTE-updownsites-drilldown.png
+
+* A link for the drill-down dashboard will appear to click on it to navigate to the LTE Status dashboard.
+
+	.. image:: /image/LTE-cpe-status-drilldown.png
+
+13.	LTE Node Status Regionally Dashboard
+============================================
+
+* This dashboard shows a list of LTE nodes with following information based on the region parameter passed from the previous panel.: 
+	* Node Name 
+	* Customer Name
+	* Interface Name 
+	* LTE State 
+
+How to access this dashboard
+-----------------------------
+
+* Navigate to the **North Region Status** or **Central Region Status** or **South Region Status** panels in the LTE Media Dashboard, click on the **i** icon button.
+
+* A link for the drill-down dashboard will appear to click on it to navigate to the LTE Node Status Regionally dashboard.
+
+	.. image:: /image/lte-node-status-regionally-drilldown.png
+
+* A region variable will also be passed based on which panel you drill down from.
+
+		**LTE Nodes when region variable is set to North**
+
+		.. image:: /image/north-lte-nodes.png
+
+		**LTE Nodes when region variable is set to South**
+
+		.. image:: /image/south-lte-nodes.png
+
+		**LTE Nodes when region variable is set to Central**
+
+		.. image:: /image/central-lte-nodes.png
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+14.South Summary 360
+****************************
+
+
+
+.. image:: /image/visualizationSouth.PNG
+
+
+* **Healthy CPEs**: Criteria for counting healthy CPEs is given below:
+	#. For ICMP protocol only; CPE will be healthy if all links terminated at a site are reachable through ICMP only.
+	#. For ICMP & SNMP both; CPE will be healthy if all links terminated at a site are reachable through ICMP & SNMP both.
+	#. Drill-down link will show the list of healthy CPEs
+  
+* **Protocol Down**: A criterion for counting Protocol down CPEs is given below:
+	#. For ICMP & SNMP both; If ALL links at a site are working, but ICMP or SNMP monitoring is failed.
+	#. Drill-down link will show the list of Protocol down CPEs
+
+
+* **Link Down(Other than Single Media Sites)**: A criterion for counting Link down CPEs is given below:
+	#. ICMP: If any one Link of a site is Down, ICMP must be down for that link irrespective of SNMP status.
+	#. For ICMP & SNMP both; If any one Link of a site is Down, both ICMP & SNMP must be down for that link.
+	#. Drill-down link will show the list of Link down CPEs
+
+* **Site Down**: A criterion for counting Site down CPEs is given below:
+	#. ICMP: If ICMP monitoring failed for ALL links of a site.
+	#. For ICMP & SNMP both; if both ICMP & SNMP monitoring failed for ALL links of a site.
+	#. Drill-down link will show the list of Site down CPEs
+
+* **Dismantled Sites**: Total count of CPEs that are disabled and marked as dismantled. 
+	#. Drill-down link will show the dismantled CPEs.
+	#. These sites will be excluded from *Site Down CPEs* and *Disabled CPEs*.
+
+* **Disabled CPEs**: Total count of CPEs that are disabled. Drill-down link will show the disabled CPEs 
+
+* **Reachability Issue**: Total count of some specific list of CPEs shared by PTCL team that are unreachable. 
+	#. Drill-down link will show the list of these CPEs
+	#. These sites will be excluded from *Site Down CPEs* 
+
+* **LTE Site Down**: A criterion for counting LTE Site down CPEs is given below:
+	#. ICMP: If ICMP monitoring failed for ALL links of an LTE site.
+	#. For ICMP & SNMP both; if both ICMP & SNMP monitoring failed for ALL links of an LTE site.
+	#. Drill-down link will show the list of Site down LTE CPEs
+
+* **Total CPEs**: Total count of CPEs
+
+* **Total Customers**: Total count of customers
+
+* **All Links**: Total links on NMS
+
+* **CPE Status**: Count of UP and DOWN CPEs
+
+* **Media-wise Spread**: Count of Media links of CPEs
+
+* **Achieved SLA(%)**: SLA of different hosts categorize by region
+
+* **All Customer SLA**: SLA of different hosts altogether.
+
+* **Vendor Spread**: Total count vendors on NMS
+
+* **CPE Status Region-wise(South)**: Total count of UP and DOWN CPEs categorize by region
+
+* **Down Interfaces**: Interface List in Tabular form
+
+.. image:: /image/SouthSummary360.PNG
+
+
+15.Regional Node Health Status
+********************************
+
+* Hostname
+* Customer Name
+
+
+Regional Node Health Status, Health CPEs Nodes
+
+.. image:: /image/RegionalNodeHealthStatus.PNG
+
+
+Regional Node Health Status, Media Filter:
+
+	.. image:: /image/RegionalNodeHealthStatusMediaFilter.PNG
+
+
+Regional Node Health Status, Customer Filter:
+
+	.. image:: /image/RegionalNodeHealthStatusCustomerFilter.PNG	
+
+
+
+Regional Node Health Status, Protocol-Down Nodes	
+
+.. image:: /image/RegionalNodeHealthStatusProtocolDownNodes.PNG	
+
+
+Regional Node Health Status, All Link-Down Nodes:	
+
+.. image:: /image/RegionalNodeHealthStatusAllLinkDownNodes.PNG
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+16.Site Down Regionally
+************************
+
+* Hostname 
+* Customer Name
+
+.. image:: /image/SiteDownRegionally.PNG
+
+Site Down Regionally, Media Filter:
+
+	.. image:: /image/SiteDownRegionallyMediaFilter.PNG
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+17.Dismantled Sites Regionally
+***********************************
+
+* Hostname
+* Region
+
+.. image:: /image/DismantledSitesRegionally.PNG
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+18.Disabled CPEs Regionally
+***********************************
+
+* Hostname
+* Region
+
+.. image:: /image/DisabledCPERegionally.PNG
+
+
+
+
+
+
+
+
+
+
+
+
+
+19.LTE Site Down Regionally
+***********************************
+
+* Hostname
+* Customer Name
+
+.. image:: /image/LTESiteDownRegionally.PNG
+
+
+
+
+
+
+
+
+
+
+
+20.Customer Status Regionally
+***********************************
+
+* Hostname
+* Customer Name
+
+.. image:: /image/CustomerStatusRegionally.PNG
+
+
+Customer Status Regionally, Status Filter:
+
+	.. image:: /image/CustomerStatusRegionallyStatusFilter.PNG
+
+
+Customer Status Regionally, Region Filter:
+
+	.. image:: /image/CustomerStatusRegionallyRegionFilter.PNG
+
+Customer Status Regionally, Media Filter:
+
+	.. image:: /image/CustomerStatusRegionallyMediaFilter.PNG
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+21.North Summary 360
+****************************
+
+
+
+.. image:: /image/visualizationNorth.PNG
+
+
+* **Healthy CPEs**: Criteria for counting healthy CPEs is given below:
+	#. For ICMP protocol only; CPE will be healthy if all links terminated at a site are reachable through ICMP only.
+	#. For ICMP & SNMP both; CPE will be healthy if all links terminated at a site are reachable through ICMP & SNMP both.
+	#. Drill-down link will show the list of healthy CPEs
+  
+* **Protocol Down**: A criterion for counting Protocol down CPEs is given below:
+	#. For ICMP & SNMP both; If ALL links at a site are working, but ICMP or SNMP monitoring is failed.
+	#. Drill-down link will show the list of Protocol down CPEs
+
+
+* **Link Down(Other than Single Media Sites)**: A criterion for counting Link down CPEs is given below:
+	#. ICMP: If any one Link of a site is Down, ICMP must be down for that link irrespective of SNMP status.
+	#. For ICMP & SNMP both; If any one Link of a site is Down, both ICMP & SNMP must be down for that link.
+	#. Drill-down link will show the list of Link down CPEs
+
+* **Site Down**: A criterion for counting Site down CPEs is given below:
+	#. ICMP: If ICMP monitoring failed for ALL links of a site.
+	#. For ICMP & SNMP both; if both ICMP & SNMP monitoring failed for ALL links of a site.
+	#. Drill-down link will show the list of Site down CPEs
+
+* **Dismantled Sites**: Total count of CPEs that are disabled and marked as dismantled. 
+	#. Drill-down link will show the dismantled CPEs.
+	#. These sites will be excluded from *Site Down CPEs* and *Disabled CPEs*.
+
+* **Disabled CPEs**: Total count of CPEs that are disabled. Drill-down link will show the disabled CPEs 
+
+* **Reachability Issue**: Total count of some specific list of CPEs shared by PTCL team that are unreachable. 
+	#. Drill-down link will show the list of these CPEs
+	#. These sites will be excluded from *Site Down CPEs* 
+
+* **LTE Site Down**: A criterion for counting LTE Site down CPEs is given below:
+	#. ICMP: If ICMP monitoring failed for ALL links of an LTE site.
+	#. For ICMP & SNMP both; if both ICMP & SNMP monitoring failed for ALL links of an LTE site.
+	#. Drill-down link will show the list of Site down LTE CPEs
+
+* **Total CPEs**: Total count of CPEs
+
+* **Total Customers**: Total count of customers
+
+* **All Links**: Total links on NMS
+
+* **CPE Status**: Count of UP and DOWN CPEs
+
+* **Media-wise Spread**: Count of Media links of CPEs
+
+* **Achieved SLA(%)**: SLA of different hosts categorize by region
+
+* **All Customer SLA**: SLA of different hosts altogether.
+
+* **Vendor Spread**: Total count vendors on NMS
+
+* **CPE Status Region-wise(North)**: Total count of UP and DOWN CPEs categorize by region
+
+* **Down Interfaces**: Interface List in Tabular form
+
+.. image:: /image/NorthSummary360.PNG
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+22.Central Summary 360
+****************************
+
+
+
+.. image:: /image/visualizationCentral.PNG
+
+
+* **Healthy CPEs**: Criteria for counting healthy CPEs is given below:
+	#. For ICMP protocol only; CPE will be healthy if all links terminated at a site are reachable through ICMP only.
+	#. For ICMP & SNMP both; CPE will be healthy if all links terminated at a site are reachable through ICMP & SNMP both.
+	#. Drill-down link will show the list of healthy CPEs
+  
+* **Protocol Down**: A criterion for counting Protocol down CPEs is given below:
+	#. For ICMP & SNMP both; If ALL links at a site are working, but ICMP or SNMP monitoring is failed.
+	#. Drill-down link will show the list of Protocol down CPEs
+
+
+* **Link Down(Other than Single Media Sites)**: A criterion for counting Link down CPEs is given below:
+	#. ICMP: If any one Link of a site is Down, ICMP must be down for that link irrespective of SNMP status.
+	#. For ICMP & SNMP both; If any one Link of a site is Down, both ICMP & SNMP must be down for that link.
+	#. Drill-down link will show the list of Link down CPEs
+
+* **Site Down**: A criterion for counting Site down CPEs is given below:
+	#. ICMP: If ICMP monitoring failed for ALL links of a site.
+	#. For ICMP & SNMP both; if both ICMP & SNMP monitoring failed for ALL links of a site.
+	#. Drill-down link will show the list of Site down CPEs
+
+* **Dismantled Sites**: Total count of CPEs that are disabled and marked as dismantled. 
+	#. Drill-down link will show the dismantled CPEs.
+	#. These sites will be excluded from *Site Down CPEs* and *Disabled CPEs*.
+
+* **Disabled CPEs**: Total count of CPEs that are disabled. Drill-down link will show the disabled CPEs 
+
+* **Reachability Issue**: Total count of some specific list of CPEs shared by PTCL team that are unreachable. 
+	#. Drill-down link will show the list of these CPEs
+	#. These sites will be excluded from *Site Down CPEs* 
+
+* **LTE Site Down**: A criterion for counting LTE Site down CPEs is given below:
+	#. ICMP: If ICMP monitoring failed for ALL links of an LTE site.
+	#. For ICMP & SNMP both; if both ICMP & SNMP monitoring failed for ALL links of an LTE site.
+	#. Drill-down link will show the list of Site down LTE CPEs
+
+* **Total CPEs**: Total count of CPEs
+
+* **Total Customers**: Total count of customers
+
+* **All Links**: Total links on NMS
+
+* **CPE Status**: Count of UP and DOWN CPEs
+
+* **Media-wise Spread**: Count of Media links of CPEs
+
+* **Achieved SLA(%)**: SLA of different hosts categorize by region
+
+* **All Customer SLA**: SLA of different hosts altogether.
+
+* **Vendor Spread**: Total count vendors on NMS
+
+* **CPE Status Region-wise(Central)**: Total count of UP and DOWN CPEs categorize by region
+
+* **Down Interfaces**: Interface List in Tabular form
+
+.. image:: /image/CentralSummary360.PNG
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+22.HBL Summary 360
+****************************
+
+
+
+.. image:: /image/visualizationHBL.PNG
+
+
+* **Healthy CPEs**: Criteria for counting healthy CPEs is given below:
+	#. For ICMP protocol only; CPE will be healthy if all links terminated at a site are reachable through ICMP only.
+	#. For ICMP & SNMP both; CPE will be healthy if all links terminated at a site are reachable through ICMP & SNMP both.
+	#. Drill-down link will show the list of healthy CPEs
+  
+* **Protocol Down**: A criterion for counting Protocol down CPEs is given below:
+	#. For ICMP & SNMP both; If ALL links at a site are working, but ICMP or SNMP monitoring is failed.
+	#. Drill-down link will show the list of Protocol down CPEs
+
+* **Site Down**: A criterion for counting Site down CPEs is given below:
+	#. ICMP: If ICMP monitoring failed for ALL links of a site.
+	#. For ICMP & SNMP both; if both ICMP & SNMP monitoring failed for ALL links of a site.
+	#. Drill-down link will show the list of Site down CPEs
+
+* **Dismantled Sites**: Total count of CPEs that are disabled and marked as dismantled. 
+	#. Drill-down link will show the dismantled CPEs.
+	#. These sites will be excluded from *Site Down CPEs* and *Disabled CPEs*.
+
+* **Disabled CPEs**: Total count of CPEs that are disabled. Drill-down link will show the disabled CPEs 
+
+* **Link Down(Other than Single Media Sites)**: A criterion for counting Link down CPEs is given below:
+	#. ICMP: If any one Link of a site is Down, ICMP must be down for that link irrespective of SNMP status.
+	#. For ICMP & SNMP both; If any one Link of a site is Down, both ICMP & SNMP must be down for that link.
+	#. Drill-down link will show the list of Link down CPEs
+
+
+* **Reachability Issue**: Total count of some specific list of CPEs shared by PTCL team that are unreachable. 
+	#. Drill-down link will show the list of these CPEs
+	#. These sites will be excluded from *Site Down CPEs* 
+
+* **Total CPEs**: Total count of CPEs
+
+* **Total Customers**: Total count of customers
+
+* **All Links**: Total links on NMS
+
+* **Media-wise Spread**: Count of Media links of CPEs
+
+* **CPE Status**: Count of UP and DOWN CPEs
+
+
+
+* **Achieved SLA(%)**: SLA of different hosts categorize by region
+
+* **Vendor Spread**: Total count vendors on NMS
+
+* **CPE Status Region-wise**: Total count of UP and DOWN CPEs categorize by region
+
+* **All HBL SLA**: SLA of different hosts altogether.
+
+* **Down Interfaces**: Interface List in Tabular form
+
+.. image:: /image/HBLSummary360.PNG
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+23.HBL Dashboard - Branch Code based filtering
+************************************************
+* CPE Branch Code
+* Customer 
+* CPE
+* CPE Current State
+* CPE Up/Down Since 
+* Link Name
+* Link Current State
+* Link Media
+* Link Up/Down Since
+  
+.. image:: /image/HBLDashboardBranchCodebasedfiltering.PNG 
+
+HBL Dashboard - Branch Code basedf iltering, Branch Code Filter:
+
+	.. image:: /image/HBLDashboardBranchCodebasedfilteringBranchCodeFilter.PNG

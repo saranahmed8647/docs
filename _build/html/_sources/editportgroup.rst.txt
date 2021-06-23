@@ -1,0 +1,54 @@
+***********************************************
+8. Edit and Remove a Virtual Machine Port Group
+***********************************************
+
+Edit a Virtual Machine Port Group
+*********************************
+
+When you are logged in to an ESXi host with the VMware Host Client, you can configure various networking settings, such as the port group name, VLAN ID, and virtual switch. 
+
+**Procedure**
+*************
+
+**1.**	Click Networking in the VMware Host Client inventory and click Port groups. 
+
+**2.**	Right-click the port group in the list that you want to edit and select Edit settings. 
+
+**3.**	**(Optional)** Enter a new port group name. 
+
+**4.**	**(Optional)** Enter a new value for the VLAN ID. 
+The VLAN ID reflects the VLAN tagging mode in the port group. 
+
+**5.**	**(Optional)** Select a virtual switch from the drop-down menu. 
+
+**6.**	**(Optional)** Expand Security and select whether to reject, accept, or inherit the Security policy exceptions from vSwitch. 
+
+**7.**	**(Optional)** Expand NIC teaming and configure the following components. 
+
+**8.**	**(Optional)** To configure traffic shaping, expand Traffic shaping, click Enabled, and specify the following parameters. 
+
+**9.**	  Traffic shaping policy is applied to the traffic of each virtual network adapter attached to the virtual switch. 
+
+**10.**	  Click Save to apply your changes.
+
+Remove a Virtual Machine Port Group
+***********************************
+
+You can remove port groups from virtual switches in case you no longer need the associated labeled networks.
+
+**Prerequisites**
+*****************
+Verify that there are no VMkernel NICs and no powered-on virtual machines connected to the port group that you want to remove.
+
+**Procedure**
+*************
+
+**1.**    Click Networking in the VMware Host Client inventory and click Port groups.
+
+**2.**    Right-click the port group that you want to remove and select Remove from the pop-up menu.
+
+**3.**   Click Remove to remove the port group.
+
+**4.**    **(Optional)** Click Refresh to verify that you have removed the port group.
+
+

@@ -1,0 +1,122 @@
+#########
+ISM Power
+#########
+
+
+
+
+************
+1. Dashboard
+************
+
+.. image:: /image/admin_dashboard.png
+
+This module will display all avaible media links status.
+
+In Media Links section it will diplay the following information :
+
+*   **PTCL Media Links** : ISM media links with tenant PTCL
+  
+*   **Other ISPs** : ISM media links with tenant other than PTCL or JAZZ (e.g, cybernet)
+  
+*   **JAZZ Media Links** : ISM media links with tenant JAZZ
+
+Clicking any media link will open a window with link details.
+
+.. image:: /image/admin_dashboard_service.png
+
+Host section will display information regarding selected site.
+
+.. image:: /image/admin_dashboard_host.png
+
+Services section will display list of media links that reside in specific site.
+
+.. image:: /image/admin_dashboard_services.png
+
+History section will display the list previous status of sites.
+
+.. image:: /image/admin_dashboard_history.png
+
+Clicking any of the site will display the following information about the site.
+
+.. image:: /image/admin_dashboard_history_02.png
+
+
+
+
+
+
+
+
+
+
+
+*****************
+2. Network Status
+*****************
+
+This module will display the following sections: 
+
+* **Network Summary**
+
+* **Hosts**
+
+.. image:: /image/admin_networkstatus.png
+
+Network summary section will display sites and media links status in graphical representation based on custom filters.
+
+.. image:: /image/admin_networkstatus_networksummary.png
+
+Hosts section in netwrok status will display the status of all available sites. Site details can be view based on available sort filters.
+
+.. image:: /image/admin_networkstatus_hosts.png
+
+
+
+
+
+
+
+
+*****************
+3. Contact MS NOC
+*****************
+
+This module allows user to send comment/feedback to NOC Admin.
+
+How To Use
+==========
+
+*   1 - From the navigation menu on left, click on Contact MS NOC.
+
+*   2 - Click on +Add
+
+*   3 - Provide username, comments and other information. Then click on add button
+
+.. image:: /image/admin_contactmsnoc.png
+
+
+
+
+
+
+
+************
+4. Reporting
+************
+
+The modules allows user to create report over a specified period with different filters available.
+
+How To Use
+==========
+
+1.	Login to Trace9 with provided credentials 
+2.	From the navigation menu on left, click on Reports.
+3.	Select the Report
+
+.. image:: /image/admin_reports.png
+
+
+Reports will be displayed based on filters (e.g, Interface Media wise Report(SNMP)).
+
+.. image:: /image/admin_reports_filters.png

@@ -1,0 +1,225 @@
+#############
+ISM View-Only
+#############
+
+
+
+******
+1. Map
+******
+
++-----------------+--------------------------------------------------------------------------+
+| Objective       | This modules displays the network devices on open street geographical map|
++-----------------+--------------------------------------------------------------------------+
+
+.. image:: /image/admin_map.png
+
+
+
+Site Device's can be seen in Green and Red color respective to their statuses based on longitude and latitude.
+
+.. image:: /image/admin_maphostobject.png
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+****************
+2. Visualization
+****************
+
+Visualization navigation tab has been added to redirect to dashboards through web portal
+
+.. image:: /image/admin_visualization.png
+
+Dashboard
+=========
+
+Following Dashboards has been added into NMS
+
+i. Summary 360
+--------------
+
+.. image:: /image/admin_visualization_dashboard_summary360.png
+
+Summary 360 dashboard will display the following information:
+
+* **Total Sites** : Count of all ISM sites(hosts/devices) added in NMS
+
+* **Healthy Sites** : Count of ISM CPEs which are in health state (All Interfaces are UP)
+
+* **Total PTCL Links** : Count of links with PTCL tenant (Only SNMP)
+
+* **Total Other ISP Links** : Count of links with tenant other than PTCL (Only SNMP)
+
+* **Dual Media UP Sites** : Count of sites that have two media (media type) and site is up (ICMP only)
+
+* **Single Media UP Sites** : Count of sites that have single media (media type) and site is up (ICMP only)
+
+* **PTCL UP Sites** : Count of sites with links of PTCL tenant and site is up (SNMP only)
+
+* **Other ISPs UP Sites** : Count of sites with links other than PTCL tenant and site is up (SNMP only)
+
+* **Single Media Down** : Count of sites that have single media (media type) and site is down (ICMP only)
+
+* **Complete Down** : Count of ISM CPEs which are complete down (All Interfaces Down) Site Down
+
+* **PTCL Link Down** : Count of ISM CPEs where only PTCL media is found down but secondary media is UP
+
+* **Other ISPs Link Down** : Count of ISM CPEs where interface or tunnel of other ISPs (Jazz or Cybernet) is down
+
+* **Host Status** : Display sites status in graphical representation
+
+* **All Links Incoming Traffic**  : Trend
+
+* **All Links Outgoing Traffic** : Trend
+
+* **Network Devices** : List of all availabel devices
+
+
+You can also navigate on the **i** icon (top-left corner of the panel) for details of the respective panel, as shown in the flow video in this article.
+
+.. image:: /image/admin_visualization_dropdown.png
+
+* **Total Sites**  will lead you **ISM Status** dashboard. It will display list of ISM CPEs which have one or more interfaces in DOWN state
+
+  * *Site Name*
+
+  * *Site Status*
+
+
+.. image:: /image/admin_visualization_ismstatus.png
+
+By clicking any available site name, **Site Details** dashboard will get displayed.
+
+.. image:: /image/admin_visualization_sitedetails.png
+
+**Filters :**
+
+.. image:: /image/admin_visualization_sitedetails_filters.png
+
+**Site Details** dashboard will display the following information:
+
+* *Device Info*
+
+* *Link Utilization*
+
+* *Uptime*
+
+* *Last CPU Utilization Percentage*
+
+* *Host Availability*
+
+* *Memory Utilization*
+
+* *Cpu Trend*
+
+* *Interface Info*
+
+* *Response Time*
+
+* *Modules Temprature*
+
+
+In **Site Details** dashboard, clicking any available interface in **Interface Info** will lead you to the ***Interface Details** dashboard.
+
+.. image:: /image/admin_visualization_interfacedetails.png
+
+**Interface Detail** dashboard will display the following information.
+
+**Filters :**
+
+.. image:: /image/admin_visualization_interfacedetails_hostfilter.png
+
+.. image:: /image/admin_visualization_interfacedetails_interfacefilter.png
+
+* *Info*
+
+* *Host Status*
+
+* *Host Speed*
+
+* *Recieve Error*
+
+* *Transmit Error*
+
+* *Transmit Discards*
+
+* *Recieve Discards*
+
+* *Interfaces State Timeleine*
+
+* *Link Traffic*
+
+**Healthy Sites** on **Summary 360** dashboard will lead you to **ISM Healthy CPEs** dashboard. It will display the following information.
+
+List of ISM CPEs which are in health state (All Interfaces are UP)
+
+* *Site Name*
+
+.. image:: /image/admin_visualization_healthycpe.png
+
+**Total PTCL Links** on **Summary 360** dashboard will lead you to **ISM Status-PTCL Media** dashboard. It will display the following information.
+
+List of ISM CPEs which have one or more interfaces in DOWN state
+
+* *Site Name*
+
+.. image:: /image/admin_visualization_ismstatusptclmedia.png
+
+**Total Other ISP Links** on **Summary 360** dashboard will lead you to **ISM Status-Other ISP Media** dashboard. It will display the following information.
+
+List of ISM CPEs which have one or more interfaces in DOWN state
+
+* *Site Name*
+
+.. image:: /image/admin_visualization_ismstatusotherispmedia.png
+
+**Complete Down** on **Summary 360** dashboard will lead you to **ISM Site Down** dashboard. It will display the following information.
+
+List of ISM CPEs which are in health state
+
+* *Site Name*
+
+.. image:: /image/admin_visualization_ismsitedown.png
+
+**PTCL Link Down** on **Summary 360** dashboard will lead you to **ISM PTCL Media Down** dashboard. It will display the following information.
+
+List of ISM CPEs where only PTCL media is found down but secondary media is UP
+
+* *Site Name*
+
+.. image:: /image/admin_visualization_ismptclmediadown.png
+
+**Other ISPs Link Down** on **Summary 360** dashboard will lead you to **ISM Other ISPs Media Down** dashboard. It will display the following information.
+
+List of ISM CPEs where interface or tunnel of other ISPs (Jazz or Cybernet) is down.
+
+* *Site Name*
+
+.. image:: /image/admin_visualization_ismotherispmediadown.png

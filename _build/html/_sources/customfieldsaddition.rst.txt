@@ -1,0 +1,82 @@
+3. Custom Fields Addition
+=========================
+
+Data fields allow you to customize input controls for custom variables. Once you defined them here, you can provide them through your defined templates. This gives you a granular control over what properties your users should be allowed to configure in which way.
+
+Perform following steps to create New Custom Field:
+
+1. Click on Director from the left side menu. Then click on Define Data Field.
+
+
+.. image:: /image/customfield-1.png
+
+2. Data Field window will appear on Left side.
+
+
+.. image:: /image/customfield-2.png
+
+3. Click on +Add button, Add a new Data Field window will appear.
+
+
+.. image:: /image/customfield-3.png
+
+4. Add The UniqueField name. This will be the name of the custom variable in the rendered Trace9 configuration.
+
+
+.. image:: /image/customfield-4.png
+
+5. Add the unique Caption which should be displayed to your users when this field is shown
+
+
+.. image:: /image/customfield-5.png
+
+6. Add An extended Description for this field. Will be shown as soon as a user puts the focus on this field
+
+
+.. image:: /image/customfield-6.png
+
+7. Click on Data Type and choose required Data Type from the drop down menu.
+
+
+.. image:: /image/customfield-7.png
+
+8. Press Add button, New Test field has been successfully created.
+
+
+.. image:: /image/customfield-8.png
+
+9. To verify new custom field, click on director then click on Define Data field then search newly created custom field from the list.
+
+
+.. image:: /image/customfield-9.png
+
+10. To assign new field to Device Templates, Click on Director from left side menu then click on Host then select Host Templates
+
+
+.. image:: /image/customfield-10.png
+
+11. Host Templates list will appear on right side, Select Network Devices template
+
+
+.. image:: /image/customfield-11.png
+
+12.Template: Network Devices window will appear on right side.
+
+
+.. image:: /image/customfield-12.png
+
+13. Click on Field tab .
+
+
+.. image:: /image/customfield-13.png
+
+14. Click on Field drop down list then search and select new added custom field.
+
+
+.. image:: /image/customfield-14.png
+
+15. Press add Button; Custom field has been successfully assign to Network Devices Template.
+
+
+.. image:: /image/customfield-15.png
+

@@ -1,0 +1,25 @@
+***********************************
+7. Add a Virtual Machine Port Group
+***********************************
+
+You can add a port group to a virtual switch in the VMware Host Client. Port groups provide networking for virtual machines.
+
+**Procedure**
+*************
+
+**1.**	Right-click Networking in the VMware Host Client inventory and click Add port group from the pop-up menu. 
+
+**2.**	Enter a name for the new port group. 
+
+**3.**	Set the VLAN ID to configure VLAN handling in the port group. 
+The VLAN ID also reflects the VLAN tagging mode in the port group. 
+
+**4.**	Select a virtual switch from the drop-down menu. 
+
+**5.**	Expand Security and select options that you want to enable for promiscuous mode, MAC address changes, and forged transmits. 
+
+**6.**	Click Add. 
+
+Your port group is created. 
+
+**7.**	(Optional) Click Refresh to display the new port group in the list. 

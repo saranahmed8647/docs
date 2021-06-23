@@ -1,0 +1,35 @@
+2. Customer Onboarding
+======================
+
+Perform following steps to onboard a new customer.
+
+1.Click on Trace9 Admin from the left-side menu, and select Customers from the options 
+
+
+.. image:: /image/13.png
+
+2.A window with a list of customers will appear. 
+
+
+.. image:: /image/14.png
+
+3.To add a new customer, click on “Add” button on the top-left side of the customer window. 
+
+
+.. image:: /image/15.png
+
+4.A panel for adding a new customer will appear on the right. 
+
+
+.. image:: /image/16.png
+
+5.Provide the required information and click on the add button.
+
+
+.. image:: /image/17.png
+
+6.New customer will be added
+
+
+.. image:: /image/18.png
+

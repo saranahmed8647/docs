@@ -1,0 +1,8 @@
+***************
+Data Mining
+***************
+
+.. toctree::
+   :maxdepth: 1
+   
+   querybuilder

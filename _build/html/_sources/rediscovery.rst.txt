@@ -1,0 +1,22 @@
+**************
+4. Rediscovery
+**************
+
+This feature provides user to again discover the host and fetch SNMP based information
+
+Requirement
+***********
+
+Initially every new device is discovered and discovered values are then stored in database against that device and are visible too under Host Custom Variables.But sometimes the Host SNMP information is updated such as site etc.So it is needed to rediscover the host again.
+
+Solution
+********
+
+Rediscovery feature has been added to give user a flexibility to discover any host any time. Values retrieved by snmp are the updated values.
+
+.. image:: /image/rediscovery-button.png
+
+
+.. image:: /image/rediscovery-customvariables.png
+
+

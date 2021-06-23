@@ -1,0 +1,80 @@
+*******************
+9. Network Topology
+*******************
+
+This module is used to scan any network in NMS and then display the captured information in form of connected-nodes in a well-defined topology.
+
+How to Use Network Topology
+***************************
+
++-----------------+---------------------------------------------------------------------------------------------------------------+
+| Objective       | To run a network scan and discover devices and their properties and then display in a List or Graphical view. |
++-----------------+---------------------------------------------------------------------------------------------------------------+
+| Pre-Requisites  | No                                                                                                            |
++-----------------+---------------------------------------------------------------------------------------------------------------+
+| Impact          | No                                                                                                            |
++-----------------+---------------------------------------------------------------------------------------------------------------+
+
+
+1. Login to Trace9 with provided credentials  
+2. On the navigation menu on left, click on “Network Topology”
+3. Three options are available: Scan, System Setup &Topology
+
+.. image:: /image/networktopology.png
+
+Scan
+####
+
+1. Click on Scan. A screen will appear with a field that prompts the user to enter an IP address. 
+
+.. image:: /image/networktopology-scan-form.png
+
+2. After filling in IP address, press the run button. It will start a scan over that IP and will discover its neighboring devices as well. 
+
+.. image:: /image/networktopology-scan.png
+
+System Setup
+############
+
+1. Click on system setup. A new page with the form below will appear. 
+
+.. image:: /image/networktopology-systemsetup.png
+
+i.	 Enter name of the community string
+ii.	 Select Authentication Protocol from drop down list (e.g. v2 etc.)
+iii. Set Authentication Protocol password
+iv.	 Select a Privacy Protocol from drop down list (v2aes etc.)
+v.	 Set a Privacy Protocol Password
+vi.	 After completing above steps press Add button
+vii. The above information will be added and displayed in form of tuple
+
+
+Topology
+########
+
+Click on Topology. Two sub options will be displayed.
+
+.. image:: /image/networktopology-topologies.png
+
+1. Topology List
+################
+
+
+.. image:: /image/networktopology-list.png
+
+1.	A list of devices is in drop down field. Choose a device or you can also choose multiple devices. 
+2.	Click on filter button after choosing the devices.
+3.	The filtered devices will be listed.
+
+
+2. Topology Map
+###############
+
+
+.. image:: /image/networktopology-map.png
+
+1.	A list of devices is in drop down field. Choose a device or you can also choose multiple devices. 
+2.	Click on filter button after choosing the devices 
+3.	The filtered devices will be displayed in a graphical view. You can also download the graphical view in PNG format
+
+

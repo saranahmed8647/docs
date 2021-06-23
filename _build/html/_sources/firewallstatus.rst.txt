@@ -1,0 +1,120 @@
+******************************
+6. Firewall Status Information
+******************************
+The purpose of Firewall Status Information module is to provide the following:
+
+*    ARP Table
+
+*    Interface Status
+
+*    Packet Filter Information
+
+*    Ping Host
+
+*    Show States
+
+*    States Summary
+
+*    Traceroute
+
+ARP Table
+*********
+ARP (Address Resolution Protocol) is used for locating IPv4 systems on a local network by MAC address.
+The ARP table in Firewall® software displays a list of systems on the network that have attempted to talk to or through the Firewall firewall within the past few minutes. If a system is up but has not talked to (or through) the Firewall firewall it will not show up in the ARP table.
+To view the list of systems currently seen by Firewall software, **click Diagnostics > ARP Table**. This list shows the **IP Address, MAC Address, Hostname** and the **Interface** where each system was last seen.
+
+Interface Status
+****************
+In the Firewall® webGUI, **Status > Interfaces** shows each interface, along with various statistics about them.
+For each interface, this screen will show the status (Such as up/no carrier), MAC address, IP address, Subnet mask, Gateway (if relevant), DNS servers (if relevant), Media type (such as 100Mbit, 1000Mbit, etc), in/out packets, in/out packets passed and blocked, errors, and collisions.
+Depending on the interface type, such as Wireless, other information may also be available.
+For PPP-based connection types, a **Connect or Disconnect** button is displayed depending on the current connection state.
+For DHCP interfaces, a **Release or Renew** button is displayed depending on the current connection state.
+
+Packet Filter Information
+*************************
+
+From the Firewall® webGUI, the **Diagnostics > pfInfo** page displays a large amount of data about how the packet filter is operating. The information includes:
+
+*	Interface statistics
+
+*	State table statistics
+
+*	Currently configured limits
+
+*	Currently configured state timers
+
+*	Per-interface rule state and byte counters
+
+
+Ping Host
+*********
+In the Firewall® webGUI, from **Diagnostics > Ping**, an ICMP echo request (aka ping) may be sent to a given Host.
+
+*	**Host**: A hostname or IP address to which the ping will be sent.
+
+*	**IP Protocol**: The address type to ping when a hostname is entered that has both an A (IPv4) and AAAA (IPv6) record.
+
+*	**Source Address**: The IP address from which the ping will be sent. This is especially important when testing LAN-to-LAN VPN connectivity.
+
+*	**Count**: How many ping requests to send. A higher count will take longer to complete and display results (especially if the target is down).
+
+Click **Ping** to start the process. The result will be displayed automatically once complete. Do not navigate away from the page while the ping is running.
+
+
+
+Show States
+***********
+A list of active connection states may be viewed at **Diagnostics > States.**
+
+This will list all currently active connection states, with their protocol, IP information, and state info.
+
+The IP address information is printed showing the IP addresses involved in a connection and the direction the connection was initiated. If only two IP addresses are shown, it is a state to or from the Firewall® box itself. If three are shown, then NAT has been applied.
+
+Each connection through the firewall will have two states: One entering the firewall and one exiting the firewall. Only one of those states will typically involve NAT.
+
+The view can be filtered by typing some text into the **Filter expression** box and pressing the **Filter** button. If an IP address or CIDR-masked subnet is entered in to the Filter expression box, then after filtering a **Kill** button will appear. Clicking the **Kill** button will remove all states to and from the entered address.
+
+Individual states can be removed by clicking  at the end of the row
+
+
+States Summary
+***************
+
+The States Summary page found at **Diagnostics > States** Summary reads the current state table and presents a summarized view with information collected in several different ways:
+
+*	**By Source IP**
+	Useful for seeing if a given source IP has an abnormally high number of states, and a summary of where they go by protocol.
+
+*	**By Destination IP**
+	Useful for seeing if a given destination IP has an abnormally high number of states, and a summary of where they go by protocol.
+
+*	**Total Per IP**
+	Useful for seeing if a given IP has an abnormally high number of states in both directions, and a summary of where they go by protocol.
+
+*	**By IP Pair**
+	Useful for seeing if a given source IP and destination IP has an abnormally high number of states between them, and a summary by protocol.
+
+This page may not render properly with large state tables. It requires a lot of processing, so larger state tables may take too long to display, or may run out of memory building the report
+
+
+
+Traceroute
+***********
+
+The traceroute page, located at **Diagnostics > Traceroute**, works like the traceroute command found on many platforms. It sends special packets which, as the name implies, trace a route across the network from the Firewall® host to a remote host. A list of hops between hosts will be displayed, along with response times, as long as the intervening hosts support (or don’t filter) traffic required for traceroute to work.
+
+*	**Host**: A hostname or IP address to which the route will be traced.
+
+*	**IP Protocol**: The address type to use when a hostname is entered that has both A (IPv4) and AAAA (IPv6) records.
+
+*	**Source Address**: The IP address from which the trace will be sent. This is especially important when testing LAN-to-LAN VPN connectivity.
+
+*	**Maximum number of hops**: The maximum length of the path to trace. The trace will stop if the path cannot be traced completely after this number of hops.
+
+*	**Reverse Address Lookup**: When checked, traceroute will attempt to perform a PTR lookup to locate hostnames for hops along the path. Will slow down the process as it has to wait for DNS replies.
+
+*	**Use ICMP**: By default, traceroute uses UDP but that may be blocked by some routers. Check this box to use ICMP instead, which may succeed.
+
+The output will be displayed once the trace is complete. The Stop button may be pressed at any time to see the current output of the trace if it is still running or stalled.
+

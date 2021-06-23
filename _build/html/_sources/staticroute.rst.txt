@@ -1,0 +1,34 @@
+*************************
+4. Firewall Static Routes
+*************************
+**To add a route:**
+
+*	Navigate to **System** > **Routing** on the **Routes** tab
+*	Click  Add to create a new static route
+*	Fill in the configuration as follows:
+
+**Destination Network**
+Specifies the network and subnet mask that is reachable using this route.
+
+**Gateway**
+Defines the router through which this network is reached.
+
+**Disabled**
+Check if the static route should not be used, only defined.
+
+**Description**
+Some text to describe the route, its purpose, etc.
+
+*	Click **Save**
+*	Click **Apply Changes**
+
+To manage existing routes:
+**************************
+
+*	Navigate to **System** > **Routing** on the **Routes** tab
+*	Click  next to an entry to edit an existing route
+*	Click  next to an entry to delete a route
+*	Click  to disable an active route
+*	Click  to enable a disabled route
+*	Click Apply Changes
+

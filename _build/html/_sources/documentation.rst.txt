@@ -1,0 +1,16 @@
+*****************
+15. Documentation
+*****************
+
+This module provides user documentation of NMS.Sphinx tool has been used to create HTML pages.It is needed to provide user a detailed guide for how the NMS would work.User should know the main features and what are the steps need to be taken in complex scenarios for fetching and filtering data, steps for onboarding of data into NMS.
+
+Documentation has been added as a part of NMS web Portal.Sphinx python based tool has been added into system to generate HTML pages.
+
+
+How To Use
+##########
+
+1.	Login to Trace9 with provided credentials 
+2.	From the navigation menu on left, click on Documentation.
+
+.. image:: /image/doc.png
